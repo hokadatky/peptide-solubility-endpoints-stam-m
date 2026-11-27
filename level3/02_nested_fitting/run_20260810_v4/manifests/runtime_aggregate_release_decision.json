@@ -1,0 +1,31 @@
+{
+  "schema": "runtime_aggregate_release_decision_v1",
+  "run_id": "addon_20260810_v4",
+  "recorded_at": "2026-08-11T01:13:00+09:00",
+  "frozen_source_modified": false,
+  "scientific_contract_changed": false,
+  "affected_stage": "aggregate-release only",
+  "defect": {
+    "frozen_source": "analysis_addon/src/aggregate_release.py",
+    "description": "For non-v1 run IDs, the frozen source derives RETROSPECTIVE_ANALYSIS_FREEZE_20260809_V4.md, but the actual V4 freeze is RETROSPECTIVE_ANALYSIS_FREEZE_20260810_V4.md.",
+    "expected_failure": "FileNotFoundError before aggregate release"
+  },
+  "runtime_shim": {
+    "path": "private_tools/v4_aggregate_release_runtime.py",
+    "sha256": "98ddb6f67437ad62d36edcc720c699a8610ccdd5e5f6e094aa25794dae5824bf",
+    "scope": "Reuse frozen privacy/result guards and aggregate schema; correct only the freeze filename and record the shim in provenance."
+  },
+  "dry_run": {
+    "status": "passed",
+    "writes_performed": false,
+    "resolved_freeze": "RETROSPECTIVE_ANALYSIS_FREEZE_20260810_V4.md",
+    "resolved_freeze_sha256": "b675678ae6d2b21917591001d41ec6e87a8f64ef0f1ff9ef1df37b16520a6eb5",
+    "missing_manifests_at_dry_run": [
+      "internal-primary.json",
+      "external-retrospective.json",
+      "modified-peptide-audit.json",
+      "shift-audit.json"
+    ]
+  },
+  "acceptance_rule": "Use the shim only after every required canonical stage manifest exists; run the standard release privacy and reproducibility audits on its outputs."
+}

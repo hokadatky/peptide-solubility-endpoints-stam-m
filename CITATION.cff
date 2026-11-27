@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the article."
+title: "Protein language models for solubility-related prediction: a practical workflow (code and aggregate records)"
+license: MIT
+repository-code: "https://github.com/hokadatky/peptide-solubility-endpoints-stam-m"
+authors:
+  - {family-names: Okada, given-names: Hiroyuki}
+  - {family-names: Ishikawa, given-names: Shohei}
+  - {family-names: Miyamoto, given-names: Takaaki}
+  - {family-names: Kosuge, given-names: Hirofumi}
+  - {family-names: Masuda, given-names: Tsukuru}
+  - {family-names: Mori, given-names: Masaru}
+  - {family-names: Nakakido, given-names: Makoto}
+  - {family-names: Matsunaga, given-names: Ryo}
+  - {family-names: Tsuchiya, given-names: Kousuke}
+  - {family-names: Chung, given-names: Ung-il}
+  - {family-names: Numata, given-names: Keiji}
+  - {family-names: Sakai, given-names: Takamasa}
+  - {family-names: Hojo, given-names: Hironori}
+preferred-citation:
+  type: article
+  title: "Protein language models for solubility-related prediction: a practical workflow"
+  journal: "Science and Technology of Advanced Materials: Methods"
+  year: 2026
+  doi: "10.1080/27660400.2026.2767647"
+  authors:
+    - {family-names: Okada, given-names: Hiroyuki}
+    - {family-names: Ishikawa, given-names: Shohei}
+    - {family-names: Miyamoto, given-names: Takaaki}
+    - {family-names: Kosuge, given-names: Hirofumi}
+    - {family-names: Masuda, given-names: Tsukuru}
+    - {family-names: Mori, given-names: Masaru}
+    - {family-names: Nakakido, given-names: Makoto}
+    - {family-names: Matsunaga, given-names: Ryo}
+    - {family-names: Tsuchiya, given-names: Kousuke}
+    - {family-names: Chung, given-names: Ung-il}
+    - {family-names: Numata, given-names: Keiji}
+    - {family-names: Sakai, given-names: Takamasa}
+    - {family-names: Hojo, given-names: Hironori}

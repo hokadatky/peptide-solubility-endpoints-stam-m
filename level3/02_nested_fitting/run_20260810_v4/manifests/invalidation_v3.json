@@ -1,0 +1,25 @@
+{
+  "affected_artifacts": [
+    "V2 secondary nonhistorical OOF",
+    "V3 primary nonhistorical OOF",
+    "V3 nonhistorical checkpoint selections",
+    "V3 fold-stability checkpoints",
+    "all downstream statistics derived from those predictions"
+  ],
+  "discovery_date": "2026-08-10 Asia/Tokyo",
+  "historical_bridge_disposition": "conditionally reusable after V4 revalidation; fixed GroupKFold path is allocator-independent",
+  "invalid_source_inventory": {
+    "files": 67,
+    "inventory_digest_sha256": "8f70c863856e0f23975a34c15e7f361cd61de3e98c054a58eecf5317361c6fc2",
+    "npz_checkpoints": 52,
+    "run_id": "addon_20260809_v3"
+  },
+  "replacement_run_id": "addon_20260810_v4",
+  "status": "NONHISTORICAL_V2_V3_EVIDENCE_INVALID_QUARANTINED",
+  "viewed_invalid_primary": {
+    "candidate_auc": 0.7865875463564981,
+    "candidate_minus_reference_auc_gain": 0.0715199120222082,
+    "reference_auc": 0.7150676343342899,
+    "scientific_use_prohibited": true
+  }
+}

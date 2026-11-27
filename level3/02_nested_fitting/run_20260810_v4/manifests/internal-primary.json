@@ -1,0 +1,12 @@
+{
+  "requires": {
+    "historical-bridge": {
+      "path": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/manifests/historical-bridge.json",
+      "sha256": "2569f128745fe3a8f854c53958e521e828d9019d564cdfff4f7ca0171589f78d"
+    }
+  },
+  "result_path": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/raw_results/internal_primary.json",
+  "stage": "internal-primary",
+  "status": "completed",
+  "status_detail": "completed"
+}

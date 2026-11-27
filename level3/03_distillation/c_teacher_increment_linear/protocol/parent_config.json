@@ -1,0 +1,157 @@
+{
+  "schema_version": "soluprot-distillation-contract-v1",
+  "run_id": "soluprot_distillation_20260813_v1",
+  "analysis_scope": "retrospective_data_informed_internal_extension",
+  "global_seed": 20260813,
+  "environment": {
+    "analysis_python": "python",
+    "embedding_python": "${HOME}/miniconda3/envs/prot5/bin/python",
+    "analysis_python_version": "3.10.17",
+    "analysis_numpy_version": "1.26.4",
+    "analysis_pandas_version": "2.3.3",
+    "analysis_scikit_learn_version": "1.2.0",
+    "analysis_torch_version": "2.7.0",
+    "embedding_resume_device": "cpu",
+    "embedding_effective_dtype_on_cpu": "float32",
+    "student_primary_device": "cpu",
+    "student_torch_threads": 1
+  },
+  "endpoint": {
+    "machine_name": "recombinant_soluble_expression_binary_ecoli",
+    "display_name": "recombinant soluble-expression status in E. coli",
+    "explicit_exclusion": "not direct aqueous solubility of a purified peptide"
+  },
+  "paths": {
+    "project_root": "${WORKSPACE}",
+    "plan_root": "${WORKSPACE}/paper/peptide_solubility_review_distillation_plan_20260813",
+    "private_run_root": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_distillation_run_20260813_v1",
+    "development": "data/solubility/soluprot_train_partitions.csv",
+    "transparent_features": "data/solubility/solubility_transparent_features_development.csv",
+    "feature_manifest": "data/solubility/solubility_transparent_features.json",
+    "embedding_index": "data/solubility/embeddings/soluprot_embedding_index.csv",
+    "prott5": "data/solubility/embeddings/soluprot_prott5.npy",
+    "esm2": "data/solubility/embeddings/soluprot_esm2.npy",
+    "external": "data/solubility/soluprot_external_test_clustered.csv",
+    "external_features": "data/solubility/solubility_transparent_features_external.csv"
+  },
+  "input_sha256": {
+    "development": "28a63f9d40c47bda0ff936830eacbf818572b78f67f23417ad01e3bee528ad0e",
+    "transparent_features": "74ee352dfeff9be1b2500261ab6d60fb2aed8870fb280b5b300e8f4ebd4712b9",
+    "feature_manifest": "be7638fbc9bdf421661710ef8319a2be58473f4de4bfe351edbd9adda3279f50",
+    "embedding_index": "0988ba5f71b8da7c9af65d5d05baa0616538a9629ac88c80e9f036430c22bf94",
+    "prott5": "be0a480acaf19f2deada752e5befb7d568f90b73f089a2ec6b74aa75ce7cdf45",
+    "external": "6053e4d90e26ab2a13dd7e6f4c99da66e269a4a2711e5645ee13b70594e3b469",
+    "external_features": "a906652cd246931dfbf1c75e4b30cf8fc59586ebee7fe77adae3bf114e0c698c"
+  },
+  "data_contract": {
+    "development_rows": 11436,
+    "development_groups": 10715,
+    "label_counts": [5718, 5718],
+    "group_column": "cluster_id",
+    "outer_fold_column": "development_fold",
+    "outer_folds": [0, 1, 2, 3, 4, 5, 6],
+    "design_train_folds": [2, 3, 4, 5, 6],
+    "design_gate_fold": 0,
+    "confirmation_train_folds": [0, 2, 3, 4, 5, 6],
+    "confirmation_fold": 1,
+    "canonical_alphabet": "ACDEFGHIKLMNPQRSTVWY",
+    "observed_length_min": 28,
+    "observed_length_max": 2825
+  },
+  "teacher": {
+    "base_block": "B1_25_TRANSPARENT_PLUS_400_ORDERED_DIMERS",
+    "representation": "fold-local supervised PLS on frozen residue-only embeddings",
+    "pls_components": 8,
+    "logistic_c": 1000.0,
+    "logistic_solver": "lbfgs",
+    "logistic_max_iter": 20000,
+    "prott5": {
+      "checkpoint": "Rostlab/prot_t5_xl_half_uniref50-enc",
+      "revision": "94a6abc029ae13029317b140b7424e012bf8dfbf",
+      "dimension": 1024
+    },
+    "hybrid": {
+      "components": ["ProtT5", "ESM-2-650M"],
+      "joint_embedding_dimension": 2304,
+      "esm2_checkpoint": "facebook/esm2_t33_650M_UR50D",
+      "esm2_revision": "08e4846e537177426273712802403f7ba8261b6c",
+      "esm2_dimension": 1280
+    },
+    "probability_clip": [0.000001, 0.999999]
+  },
+  "student": {
+    "name": "TriPepLite-v1",
+    "input": "canonical raw sequence plus 25 deterministic transparent descriptors",
+    "trimer_vocabulary": 8000,
+    "reserved_short_sequence_tokens": 1,
+    "trimer_embedding_dimension": 32,
+    "terminal_residues": 32,
+    "descriptor_dimension": 25,
+    "descriptor_projection_dimension": 32,
+    "head_hidden_dimension": 64,
+    "dropout": 0.1,
+    "primary_device": "cpu",
+    "inference_runtime": "NumPy model core plus deterministic descriptor calculator (current implementation uses Biopython); no ProtT5, ESM-2, transformers, or PyTorch model dependency",
+    "artifact_size_limit_bytes": 5242880
+  },
+  "training": {
+    "epochs": 40,
+    "batch_size": 128,
+    "optimizer": "AdamW",
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "betas": [0.9, 0.999],
+    "epsilon": 1e-8,
+    "gradient_clip_norm": 1.0,
+    "primary_seed": 20260813,
+    "sensitivity_seeds": [20260814, 20260815],
+    "hard_only_alpha": 0.0,
+    "distillation_alpha": 0.5,
+    "temperature": 2.0,
+    "class_weight": null,
+    "early_stopping": false,
+    "best_checkpoint_selection": false,
+    "hyperparameter_search": false
+  },
+  "fixed_arms": [
+    "B1_ORDER_LOGIT",
+    "TRIPEPLITE_HARD",
+    "PROTT5_TEACHER",
+    "PROTT5_DISTILLED_TRIPEPLITE",
+    "PROTT5_ESM2_TEACHER",
+    "PROTT5_ESM2_DISTILLED_TRIPEPLITE"
+  ],
+  "hybrid_selection_gate": {
+    "dataset": "development_fold_0_only",
+    "primary_metric": "log_loss",
+    "minimum_teacher_log_loss_improvement": 0.005,
+    "minimum_student_log_loss_improvement": 0.005,
+    "maximum_allowed_teacher_auc_decrement": 0.005,
+    "maximum_allowed_student_auc_decrement": 0.005,
+    "fallback": "ProtT5 teacher"
+  },
+  "confirmation": {
+    "dataset": "development_fold_1_only",
+    "primary_scientific_contrast": "selected_distilled_student minus same_architecture_hard_student",
+    "primary_metric": "roc_auc",
+    "supporting_metrics": ["average_precision", "log_loss", "brier_score"],
+    "uncertainty_unit": "cluster_id",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260813,
+    "teacher_gain_retention_target": 0.8,
+    "latency_target_single_500aa_cpu_median_ms": 100.0
+  },
+  "external": {
+    "status": "optional_after_internal_confirmation_and_author_go",
+    "interpretation": "retrospective cross-database transfer; not locked, prospective, or direct-aqueous validation",
+    "tuning_after_opening": false
+  },
+  "release": {
+    "row_level_outputs_private_only": true,
+    "sequences_private_only": true,
+    "record_ids_private_only": true,
+    "manuscript_edit_allowed": false,
+    "app_edit_allowed": false,
+    "s0_s1_v4_edit_allowed": false
+  }
+}

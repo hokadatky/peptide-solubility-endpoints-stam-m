@@ -1,0 +1,4 @@
+pool 3100 rows / 1550 positives / 2723 clusters
+join check: all stored external ROC-AUC values reproduced to <1e-12
+estimator check: reproduced stored primary contrast 0.0034730489073882 and its 95% interval
+wrote results.json, metrics.tsv (14 rows), contrasts.tsv (24 rows)

@@ -1,0 +1,54 @@
+{
+  "batches_completed_current_run": 3068,
+  "chunk_context_limitation": "Sequences longer than the chunk limit are encoded as non-overlapping blocks; context does not cross block boundaries.",
+  "configuration": {
+    "batch_schedule_hash": "012d52393974adee06614215799645128f671256b3474534702cdc4bbe6740b3",
+    "checkpoint": "Rostlab/prot_t5_xl_half_uniref50-enc",
+    "chunk_residues": 900,
+    "dtype": "float16",
+    "max_batch_size": 32,
+    "max_batch_tokens": 1800,
+    "model_key": "prott5",
+    "n_records": 14536,
+    "record_id_hash": "6b4d1a7e1464aa89acc8d31ad5f68388d65843aaaadb71db36411caefb5d5e65",
+    "revision": "94a6abc029ae13029317b140b7424e012bf8dfbf"
+  },
+  "configuration_hash": "881b7a5c06367fd3e28cad08d35d57c785fae524fd0d02bac71f3c07a5e2db47",
+  "device": "cpu",
+  "dimension": 1024,
+  "effective_torch_dtype": "float32",
+  "input_sha256": {
+    "development": "28a63f9d40c47bda0ff936830eacbf818572b78f67f23417ad01e3bee528ad0e",
+    "external_test": "6053e4d90e26ab2a13dd7e6f4c99da66e269a4a2711e5645ee13b70594e3b469",
+    "index": "0988ba5f71b8da7c9af65d5d05baa0616538a9629ac88c80e9f036430c22bf94"
+  },
+  "n_batches": 3068,
+  "n_chunks": 14941,
+  "n_records": 14536,
+  "output_bytes": 59539584,
+  "output_sha256": "be0a480acaf19f2deada752e5befb7d568f90b73f089a2ec6b74aa75ce7cdf45",
+  "parameter_count": 1208141824,
+  "peak_memory_current_run": {
+    "accelerator_current_bytes": null,
+    "accelerator_driver_or_reserved_bytes": null,
+    "process_rss_bytes": 7888699392
+  },
+  "pooling": "residue-only arithmetic mean across every biological residue",
+  "sequences_longer_than_chunk": 379,
+  "software": {
+    "platform": "macOS-15.4-arm64-arm-64bit",
+    "python": "3.9.18",
+    "torch": "2.5.1"
+  },
+  "special_tokens_excluded": true,
+  "throughput_current_run": {
+    "all_residues_per_second_if_uninterrupted": 533.7797248259991,
+    "all_sequences_per_second_if_uninterrupted": 1.5728443549503148
+  },
+  "timing_current_run_seconds": {
+    "embedding": 9241.8553395,
+    "model_load": 0.7960696670000001,
+    "warmup": 3.453141208
+  },
+  "total_residues": 4933115
+}

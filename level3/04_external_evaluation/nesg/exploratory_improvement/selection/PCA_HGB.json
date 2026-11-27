@@ -1,0 +1,358 @@
+{
+  "calibration_diagnostics": {
+    "coefficients_finite": true,
+    "converged": true,
+    "convergence_warning": false,
+    "max_iter": 20000,
+    "n_iter": [
+      6
+    ],
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "warnings": []
+  },
+  "calibration_intercept": 0.009145086639722614,
+  "calibration_partition_raw_metrics": {
+    "auc": 0.7739562776324445,
+    "average_precision": 0.7757189178397438,
+    "brier": 0.19306520652982911,
+    "log_loss": 0.5661889992760973
+  },
+  "calibration_slope": 1.0855409683354822,
+  "checkpoint_sha256": "cb04778a9e88a2ba4c9c6ea8b5514a49794dda3cb2c26a106ac034e715e8a7d5",
+  "grid": [
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 100,
+      "selection_auc": 0.7663609735898232
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 100,
+      "selection_auc": 0.7662285268882028
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 50,
+      "selection_auc": 0.7614391323675381
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 50,
+      "selection_auc": 0.7631091787086599
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "selection_auc": 0.7631000444533755
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "selection_auc": 0.7614299981122539
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 100,
+      "selection_auc": 0.7660443194066389
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 100,
+      "selection_auc": 0.7638673218972457
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 50,
+      "selection_auc": 0.7645584805470811
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 50,
+      "selection_auc": 0.7640667531376167
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20,
+      "selection_auc": 0.7680599450726783
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 64,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20,
+      "selection_auc": 0.7591844936882296
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 100,
+      "selection_auc": 0.7688470134029972
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 100,
+      "selection_auc": 0.7654399361820031
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 50,
+      "selection_auc": 0.7705429401340909
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 50,
+      "selection_auc": 0.7692184731178867
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "selection_auc": 0.7724733127508114
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "selection_auc": 0.7639708434571331
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 100,
+      "selection_auc": 0.7705246716235226
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 100,
+      "selection_auc": 0.7688622371618041
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 50,
+      "selection_auc": 0.7663701078451074
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 50,
+      "selection_auc": 0.7722982395245316
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 10.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20,
+      "selection_auc": 0.771413739137848
+    },
+    {
+      "diagnostics": {
+        "converged": true,
+        "iterations": 300,
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 128,
+      "l2_regularization": 1.0,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20,
+      "selection_auc": 0.7719694063343017
+    }
+  ],
+  "kind": "hgb",
+  "mode": "pca",
+  "model_sha256": "a35c7be8b019b63ac481cbf17fafd2b4644aff0ffd1881287c1a4133620c78c0",
+  "refit_diagnostics": {
+    "converged": true,
+    "iterations": 300,
+    "warnings": []
+  },
+  "selected": {
+    "diagnostics": {
+      "converged": true,
+      "iterations": 300,
+      "warnings": []
+    },
+    "eligible": true,
+    "k": 128,
+    "l2_regularization": 10.0,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "selection_auc": 0.7724733127508114
+  }
+}

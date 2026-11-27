@@ -1,0 +1,61 @@
+train 9819 rows / confirmation fold1 1617 rows, 1531 groups
+B1 0.7069 | teacher 0.7788
+  crossfit heldout fold 0: 1621 rows
+  crossfit heldout fold 2: 1623 rows
+  crossfit heldout fold 3: 1655 rows
+  crossfit heldout fold 4: 1633 rows
+  crossfit heldout fold 5: 1643 rows
+  crossfit heldout fold 6: 1644 rows
+  fitting distilled student ...
+    epoch 10/40 loss 5.7027
+    epoch 20/40 loss 5.5537
+    epoch 30/40 loss 5.6092
+    epoch 40/40 loss 5.5799
+  distilled: AUC 0.6718 (1510s)
+  fitting hard_only student ...
+    epoch 10/40 loss 0.3982
+    epoch 20/40 loss 0.1059
+    epoch 30/40 loss 0.0364
+    epoch 40/40 loss 0.0330
+  hard_only: AUC 0.6633 (1501s)
+{
+ "schema": "ondevice_distillation_reproduction_v1",
+ "status": "INDEPENDENT_RECONSTRUCTION_NOT_THE_ORIGINAL_PREREGISTERED_RUN",
+ "protocol": "protocol/REPRODUCTION_PROTOCOL_20260822.md (written before fitting)",
+ "endpoint": "SoluProt recombinant soluble-expression status in E. coli; not direct aqueous solubility",
+ "confirmation_fold": 1,
+ "confirmation_rows": 1617,
+ "confirmation_groups": 1531,
+ "auc": {
+  "teacher_ProtT5_plain_logistic": 0.7787997001545122,
+  "B1_canonical_contract": 0.7069148041060473,
+  "distilled_student": 0.671834411859195,
+  "hard_only_student": 0.6632865207214649
+ },
+ "calibration_distilled": {
+  "brier": 0.2527138751658092,
+  "log_loss": 0.7300618058189776
+ },
+ "contrasts_fold1": {
+  "distilled_minus_hard_only": {
+   "delta": 0.008399125666499767,
+   "ci95": [
+    -0.020420379434890466,
+    0.0376050032655782
+   ],
+   "valid_replicates": 10000
+  },
+  "distilled_minus_B1_canonical": {
+   "delta": -0.035055168267698465,
+   "ci95": [
+    -0.0599387310740831,
+    -0.010434103326377118
+   ],
+   "valid_replicates": 10000
+  }
+ },
+ "student_parameters_deployable": 99617,
+ "elapsed_seconds": 3065.5,
+ "teacher_gain_retention_fraction_vs_canonical_B1": -0.4880078316201657,
+ "numpy_torch_max_abs_probability_difference": 6.940584743875267e-07
+}

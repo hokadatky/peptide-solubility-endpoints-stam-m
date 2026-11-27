@@ -1,0 +1,5 @@
+# Stage E: correction scale boundary, retaining prior candidates
+
+2026-09-09, after Stage C final fit/metrics and before Stage E fitting. Every Stage C outer selection used logit space, alpha10000 and gamma1, the largest allowed correction scale; pooled AUC0.723999, retained teacher increment18.158%, below the separately stated20% progression criterion and80% historical target. Do not relabel that Stage C gate as passed.
+
+Add logit-space ridge alpha3000/10000/30000 and gamma0/.5/1/2/4 candidates within the same four-inner/five-outer design. Retain ALL original Stage C inner candidate results (both spaces) in the candidate pool. Select by the same inner-AUC/tie rules. Student fitting, teacher targets, inference, matched hard, independently tuned hard and shuffled controls unchanged. No selection on the outer outcome. Stage E is still data-informed exploratory development, not confirmation. Ordinary same-feature logistic control remains mandatory and unchanged. No further expansion of gamma or feature family in this cycle; report the resulting learning boundary.

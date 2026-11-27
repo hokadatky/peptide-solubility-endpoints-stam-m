@@ -1,0 +1,140 @@
+{
+  "canonicalization": {
+    "allowed_alphabet": "ACDEFGHIKLMNPQRSTVWY",
+    "noncanonical_policy": "exclude before modelling; none detected in official splits",
+    "rule": "remove whitespace and convert letters to uppercase",
+    "tag_handling": "no tag or cloning-scar removal"
+  },
+  "duplicate_policy": {
+    "conflicting_label": "exclude from the primary analysis",
+    "cross_split": "retain the locked external test and remove exact matches from training",
+    "identical_label": "collapse to one sequence before splitting",
+    "observed_action": "no action required for the official training and test files"
+  },
+  "endpoint_name": "recombinant-expression soluble status in Escherichia coli",
+  "endpoint_scope_note": "Operational binary status after recombinant production in Escherichia coli; not intrinsic aqueous or thermodynamic solubility.",
+  "exact_train_external_sequence_overlap": 0,
+  "generated_utc": "2026-08-04T05:58:09.722918+00:00",
+  "original_nesg_audit": {
+    "conflicting_sol_score_groups": 124,
+    "duplicate_rows_beyond_first": 225,
+    "duplicate_sequence_groups": 206,
+    "note": "The official 3,100-case SoluProt test set is retained as distributed. The larger NESG archive is audited for provenance only and is not used to reconstruct labels.",
+    "official_test_matching_nesg_rows": 3146,
+    "official_test_sequences_found": 3100,
+    "official_test_sequences_missing": 0,
+    "official_test_sequences_with_multiple_nesg_rows": 46,
+    "rows": 9703,
+    "unique_sequences": 9478
+  },
+  "software": {
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-15.4-arm64-arm-64bit",
+    "python": "3.9.18"
+  },
+  "source_files": {
+    "nesg_archive": {
+      "basename": "nesg.zip",
+      "bytes": 1339711,
+      "sha256": "ea26072f601fb91dd2eaa3a842cd9268ceef2a8139722e78de04ffef6d0db71e"
+    },
+    "nesg_csv": {
+      "basename": "nesg.csv",
+      "bytes": 110402,
+      "sha256": "0aa95ae51a0c878375a1e29b78c920b2161f2553e079c6fec342ffa3b945bc1f"
+    },
+    "nesg_fasta": {
+      "basename": "nesg.fasta",
+      "bytes": 2446730,
+      "sha256": "7e8168012509fca03993f22d92c6ab90be1a9264bee489c88940fa3a211ec205"
+    },
+    "soluprot_archive": {
+      "basename": "soluprot_data.zip",
+      "bytes": 3090220,
+      "sha256": "c70b23a7b56060300c6539b5ddc606a26ab6aa65a9140e2bf1182de06ca7a572"
+    },
+    "test_csv": {
+      "basename": "test_set.csv",
+      "bytes": 26580,
+      "sha256": "7b56b322899c5cfc4fc10628d5f79c1cb03abb93346cbd20e89f0ed96b51732b"
+    },
+    "test_fasta": {
+      "basename": "test_set.fasta",
+      "bytes": 790166,
+      "sha256": "3c78f79b7d3eeb2123b4efe5840c949eeeaac6ad27da4ada9b4e6b242187801d"
+    },
+    "training_csv": {
+      "basename": "training_set.csv",
+      "bytes": 99539,
+      "sha256": "14224140cee84d599c1327d70c4d9575a9eb7254301697f7ca25ef43cd03b989"
+    },
+    "training_fasta": {
+      "basename": "training_set.fasta",
+      "bytes": 4323331,
+      "sha256": "55cbd5a653bc35d8183608ecd3a186bd0bbe1fe155682eb5dc4efb1c575d8238"
+    }
+  },
+  "split_audits": {
+    "external_test": {
+      "conflicting_label_groups": 0,
+      "duplicate_rows_beyond_first": 0,
+      "duplicate_sequence_groups": 0,
+      "label_counts": {
+        "0": 1550,
+        "1": 1550
+      },
+      "length": {
+        "max": 979,
+        "mean": 243.77903225806452,
+        "median": 222.0,
+        "min": 50,
+        "n": 3100,
+        "n_gt_1000": 0,
+        "n_gt_1022": 0,
+        "n_gt_900": 2,
+        "q01": 67.99000000000001,
+        "q05": 91.0,
+        "q25": 144.0,
+        "q75": 318.25,
+        "q95": 476.0499999999997,
+        "q99": 564.0
+      },
+      "missing_labels": 0,
+      "missing_sequences": 0,
+      "noncanonical_sequences": 0,
+      "rows": 3100,
+      "unique_sequences": 3100
+    },
+    "train": {
+      "conflicting_label_groups": 0,
+      "duplicate_rows_beyond_first": 0,
+      "duplicate_sequence_groups": 0,
+      "label_counts": {
+        "0": 5718,
+        "1": 5718
+      },
+      "length": {
+        "max": 2825,
+        "mean": 365.28506470793985,
+        "median": 318.0,
+        "min": 28,
+        "n": 11436,
+        "n_gt_1000": 250,
+        "n_gt_1022": 239,
+        "n_gt_900": 377,
+        "q01": 69.0,
+        "q05": 104.0,
+        "q25": 209.0,
+        "q75": 448.0,
+        "q95": 803.0,
+        "q99": 1257.949999999999
+      },
+      "missing_labels": 0,
+      "missing_sequences": 0,
+      "noncanonical_sequences": 0,
+      "rows": 11436,
+      "unique_sequences": 11436
+    }
+  }
+}

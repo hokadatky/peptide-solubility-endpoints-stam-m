@@ -1,0 +1,113 @@
+{
+  "claim_ceiling": "Retrospective robustness only; not independent confirmation, external validation, or app-promotion evidence.",
+  "device": "mps",
+  "endpoint": "recombinant soluble-expression status in E. coli",
+  "evaluation_fold": 1,
+  "evaluation_groups": 1531,
+  "evaluation_role": "post-selection robustness check; fold 1 was already opened in V1 and is not an untouched confirmation",
+  "evaluation_rows": 1617,
+  "explicit_exclusion": "not direct aqueous solubility of a purified peptide",
+  "fit_metadata": {
+    "distilled": {
+      "all_losses_finite": true,
+      "arm": "distilled",
+      "batches": 1228,
+      "loss_final": [
+        0.8404232263565063,
+        0.7219335436820984,
+        0.9589129090309143
+      ],
+      "loss_initial": [
+        0.4817446768283844,
+        0.07079941034317017,
+        0.8926899433135986
+      ],
+      "total_encoder_parameters": 33992881,
+      "trainable_parameters": 5543521
+    },
+    "hard": {
+      "all_losses_finite": true,
+      "arm": "hard",
+      "batches": 1228,
+      "loss_final": [
+        0.7638923525810242,
+        0.7638923525810242,
+        0.0
+      ],
+      "loss_initial": [
+        0.07079941034317017,
+        0.07079941034317017,
+        0.0
+      ],
+      "total_encoder_parameters": 33992881,
+      "trainable_parameters": 5543521
+    }
+  },
+  "frozen_design_settings_changed": false,
+  "gates": {
+    "distillation_gain_pass": true,
+    "distilled_minus_hard_ensemble_auc": 0.004289626264016966,
+    "overall_pass": false,
+    "required_auc_for_80pct_retention": 0.7735325164073615,
+    "retention_pass": false,
+    "teacher_gain_retention": 0.7790849673202616
+  },
+  "group_overlap": 0,
+  "metrics": {
+    "B1_OFFSET": {
+      "average_precision": 0.7354931568944465,
+      "brier": 0.215922076529919,
+      "log_loss": 0.6171699166655317,
+      "roc_auc": 0.7070586075542705
+    },
+    "CORRECT_FROZEN_ESM35_B1": {
+      "average_precision": 0.7679670892288017,
+      "brier": 0.20257814671079022,
+      "log_loss": 0.594157358053818,
+      "roc_auc": 0.7599859256199611
+    },
+    "ESM35_DISTILLED_RESIDUAL": {
+      "average_precision": 0.7824570273749099,
+      "brier": 0.19786636919017608,
+      "log_loss": 0.5772197633583666,
+      "roc_auc": 0.7648767726834641
+    },
+    "ESM35_HARD_RESIDUAL": {
+      "average_precision": 0.7688214918976274,
+      "brier": 0.20259097382431804,
+      "log_loss": 0.5876224056611088,
+      "roc_auc": 0.7509308978536571
+    },
+    "FROZEN_EQUAL_ENSEMBLE_DISTILLED": {
+      "average_precision": 0.7873848775698425,
+      "brier": 0.19489148331363926,
+      "log_loss": 0.5684802134878794,
+      "roc_auc": 0.7717946364373461
+    },
+    "FROZEN_EQUAL_ENSEMBLE_HARD_CONTROL": {
+      "average_precision": 0.781892287289782,
+      "brier": 0.19610438205187708,
+      "log_loss": 0.5714756706699082,
+      "roc_auc": 0.7675050101733292
+    },
+    "PROTT5_TEACHER": {
+      "average_precision": 0.8058821769672577,
+      "brier": 0.1881716611741392,
+      "log_loss": 0.5547642763247237,
+      "roc_auc": 0.7901509936206343
+    }
+  },
+  "private_prediction_path": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_distillation_rescue_run_20260813_v2/frozen_candidate_postselection_fold1_predictions.parquet",
+  "runtime_seconds": 646.9523069858551,
+  "schema": "frozen-rescue-postselection-fold1-v1",
+  "status": "ROBUSTNESS_STOP",
+  "train_folds": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "train_rows": 9819
+}

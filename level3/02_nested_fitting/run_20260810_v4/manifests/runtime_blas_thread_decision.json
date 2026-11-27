@@ -1,0 +1,40 @@
+{
+  "schema": "v4_runtime_operational_decision_v1",
+  "run_id": "addon_20260810_v4",
+  "recorded_at": "2026-08-10T20:25:18+09:00",
+  "scope": "runtime_resource_control_only",
+  "scientific_contract_changed": false,
+  "reason": "The default OpenBLAS pool exposed 16 threads and made the 425-feature nested logistic arm slower. A bounded representative inner-fit benchmark was performed after SIGSTOP of the main process.",
+  "benchmark": {
+    "outer_fold": 0,
+    "inner_fold": 0,
+    "rows": 7852,
+    "features": 425,
+    "c": 100.0,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "max_iter": 20000,
+    "threads_4": {
+      "seconds": 17.34484304097714,
+      "n_iter": [1734],
+      "converged": true,
+      "auc": 0.7726122462776183
+    },
+    "threads_8": {
+      "seconds": 108.30116808396997,
+      "n_iter": [1734],
+      "converged": true,
+      "auc": 0.7726122462776183
+    },
+    "max_abs_probability_difference_4_vs_8": 0.0,
+    "one_thread_disposition": "stopped after exceeding three minutes; rejected as slower",
+    "twelve_thread_disposition": "not run because eight threads was already 6.24-fold slower than four"
+  },
+  "decision": {
+    "environment": {
+      "OPENBLAS_NUM_THREADS": "4"
+    },
+    "resume_policy": "reuse only completed immutable v2 checkpoints; recompute the interrupted B1 outer fold from the beginning",
+    "model_grid_split_and_numerical_policy": "unchanged"
+  }
+}

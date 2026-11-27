@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "metrics": [
+    {
+      "arm": "B1_ORDER_LOGIT",
+      "kind": "raw",
+      "metric_match": true,
+      "prediction_seal_match": true
+    },
+    {
+      "arm": "B1_ORDER_LOGIT",
+      "kind": "calibrated",
+      "metric_match": true,
+      "prediction_seal_match": true
+    },
+    {
+      "arm": "B1_ORDER_PLUS_PROTT5_PLS_LOGIT",
+      "kind": "raw",
+      "metric_match": true,
+      "prediction_seal_match": true
+    },
+    {
+      "arm": "B1_ORDER_PLUS_PROTT5_PLS_LOGIT",
+      "kind": "calibrated",
+      "metric_match": true,
+      "prediction_seal_match": true
+    }
+  ],
+  "independent_cluster_bootstrap_ci95": [
+    -0.011879189233151127,
+    0.01862790890326302
+  ],
+  "replicates": 10000,
+  "input_hashes_unchanged": true,
+  "frozen_source_unchanged": true,
+  "original_submission_and_repository_files_unchanged": 531,
+  "unexpected_changes": [],
+  "training_rerun": false
+}

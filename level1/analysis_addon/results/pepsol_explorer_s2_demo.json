@@ -1,0 +1,96 @@
+{
+  "schema": "pepsol-explorer-publication-demo-v1",
+  "created_date": "2026-08-13",
+  "purpose": "Deterministic, privacy-safe synthetic examples for publication rendering of the implemented PepSol Explorer 1.1.0 interface.",
+  "software": {
+    "name": "PepSol Explorer",
+    "version": "1.1.0",
+    "model_artifact_sha256": "6183e50a6c2bf42b640501c9eb131878cc6be643e9772071688cbe447e9d69d6",
+    "release_zip_sha256": "d931d920d8e317a7a84a9d90e866888e5685af0706bfa755ce9e8cde725c4787",
+    "automated_tests_passed": 12,
+    "automated_tests_failed": 0,
+    "portable_inference_parity_rtol": 1e-12,
+    "portable_inference_parity_atol": 1e-12,
+    "endpoint": "Production-stage recombinant soluble-expression status in E. coli; not direct aqueous solubility of a purified peptide.",
+    "score_semantics": "Raw 0-100 relative-ranking scores; not calibrated probabilities.",
+    "external_validation": "Not performed for the deployment artifact.",
+    "privacy": "Local inference; no persistent sequence or embedding cache; portable artifact contains no record IDs, sequences, labels, row-level predictions or row-level derived features."
+  },
+  "prott5": {
+    "checkpoint": "Rostlab/prot_t5_xl_half_uniref50-enc",
+    "revision": "94a6abc029ae13029317b140b7424e012bf8dfbf",
+    "pooling": "Residue-only arithmetic mean; special tokens excluded.",
+    "device": "cpu",
+    "offline": true
+  },
+  "internal_group_controlled_oof_metrics": [
+    {
+      "model": "B0 transparent",
+      "roc_auc": 0.7042738938822328,
+      "auprc": 0.7133703103982074,
+      "brier": 0.2171313174287938
+    },
+    {
+      "model": "B1 order-aware",
+      "roc_auc": 0.7152124859659689,
+      "auprc": 0.7423662792916608,
+      "brier": 0.21303168877322712
+    },
+    {
+      "model": "B1 + ProtT5 PLS-8",
+      "roc_auc": 0.7872144211544063,
+      "auprc": 0.8013552163792494,
+      "brier": 0.1904001256817954
+    }
+  ],
+  "examples": [
+    {
+      "id": "short_synthetic",
+      "generation": "Public mnemonic canonical sequence; not a training or evaluation record.",
+      "sequence": "RADARADARADARADA",
+      "length": 16,
+      "molecular_weight_da": 1671.7309,
+      "isoelectric_point": 6.0991308212,
+      "whole_sequence_gravy": -1.1,
+      "aggregation_solubility_proxy_0_100": 59.5078473866,
+      "soluprot_transparent_score_0_100": 0.0137534047,
+      "soluprot_order_aware_score_0_100": 99.9859053294,
+      "soluprot_prott5_score_0_100": 99.9999993744,
+      "soluprot_applicability": "OUT_OF_DOMAIN",
+      "soluprot_ad_percentile_band": ">99th",
+      "soluprot_ad_distance_over_q95": 4.5324612798,
+      "interpretation": "Chemistry and pH descriptors remain available. The expression scores are visible for transparency but must not be interpreted quantitatively."
+    },
+    {
+      "id": "protein_like_seed_20260813",
+      "generation": "Canonical 300-residue synthetic sequence sampled with NumPy default_rng seed 20260813 from a fixed amino-acid frequency vector; not a training or evaluation record.",
+      "sequence": "WHERTALQLAKSKEKADVNLTYNPVVFSPNRQSTSRTNSHTVANKQYIRKTHDFFQWNVHNTISTMMQGKTMEPVYKKCYWVGMENVSPEKECAVKHKMSHSNSEARKSPASDPKAVSIFSHFKHRSFSFVAPMNGMIIKEGPKVHGMRIPEMPVVKNHFDVDMLIAFKIDPNAFEHSCRFYIIYDSSLEEKWVAKNIDKDRFRDYMGKQHRFRAQYLPFIASAFRFEQSKFNRKMRAEFINHVQFMQKESTHNEQRYKSDGLNSQMVTLVGKGESLRKQKNVKQVPSAMFTRQSTHGSY",
+      "length": 300,
+      "molecular_weight_da": 35130.7851000001,
+      "isoelectric_point": 9.8358930588,
+      "whole_sequence_gravy": -0.763,
+      "aggregation_solubility_proxy_0_100": 43.2640073561,
+      "soluprot_transparent_score_0_100": 80.0677388236,
+      "soluprot_order_aware_score_0_100": 91.3018581286,
+      "soluprot_prott5_score_0_100": 94.6811369475,
+      "soluprot_applicability": "IN_DOMAIN",
+      "soluprot_ad_percentile_band": "<=95th",
+      "soluprot_ad_distance_over_q95": 0.8224200509,
+      "interpretation": "The three scores may be used only as relative rankings for the defined E. coli soluble-expression endpoint."
+    }
+  ],
+  "ph_profile": [
+    {"id": "short_synthetic", "pH": 3.0, "net_charge": 4.4527706792},
+    {"id": "short_synthetic", "pH": 5.0, "net_charge": 0.4346433555},
+    {"id": "short_synthetic", "pH": 7.0, "net_charge": -0.2354553417},
+    {"id": "short_synthetic", "pH": 7.4, "net_charge": -0.4408616687},
+    {"id": "short_synthetic", "pH": 9.0, "net_charge": -0.9732941456},
+    {"id": "short_synthetic", "pH": 11.0, "net_charge": -1.3633197516},
+    {"id": "protein_like_seed_20260813", "pH": 3.0, "net_charge": 62.2817360218},
+    {"id": "protein_like_seed_20260813", "pH": 5.0, "net_charge": 38.4561061805},
+    {"id": "protein_like_seed_20260813", "pH": 7.0, "net_charge": 21.0579776534},
+    {"id": "protein_like_seed_20260813", "pH": 7.4, "net_charge": 19.9566278093},
+    {"id": "protein_like_seed_20260813", "pH": 9.0, "net_charge": 13.8912250777},
+    {"id": "protein_like_seed_20260813", "pH": 11.0, "net_charge": -21.9698315934}
+  ]
+}

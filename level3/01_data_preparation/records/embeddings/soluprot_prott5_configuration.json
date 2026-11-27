@@ -1,0 +1,13 @@
+{
+  "batch_schedule_hash": "012d52393974adee06614215799645128f671256b3474534702cdc4bbe6740b3",
+  "checkpoint": "Rostlab/prot_t5_xl_half_uniref50-enc",
+  "chunk_residues": 900,
+  "configuration_hash": "881b7a5c06367fd3e28cad08d35d57c785fae524fd0d02bac71f3c07a5e2db47",
+  "dtype": "float16",
+  "max_batch_size": 32,
+  "max_batch_tokens": 1800,
+  "model_key": "prott5",
+  "n_records": 14536,
+  "record_id_hash": "6b4d1a7e1464aa89acc8d31ad5f68388d65843aaaadb71db36411caefb5d5e65",
+  "revision": "94a6abc029ae13029317b140b7424e012bf8dfbf"
+}

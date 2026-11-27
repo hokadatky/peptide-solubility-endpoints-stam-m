@@ -1,0 +1,8 @@
+{
+  "input_rows": 11436,
+  "requires": {},
+  "result_path": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/raw_results/historical_bridge.json",
+  "stage": "historical-bridge",
+  "status": "completed",
+  "status_detail": "completed"
+}

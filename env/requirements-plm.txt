@@ -1,0 +1,28 @@
+# Environment for the pLM worked example and the bring-your-own-data ablation CLI
+# (analysis/plm_ablation_cli.py, analysis/_ablation_core.py, analysis/embeddings.py,
+#  and the analysis/*.py worked-example scripts).
+#
+# This is SEPARATE from requirements.txt (which pins only the audit-test deps:
+# openpyxl + pytest). Create a dedicated env, e.g.:
+#     conda create -n plm python=3.10 && conda activate plm
+#     pip install -r requirements-plm.txt
+#
+# The BASE-only path (composition + physicochemical descriptors) needs only
+# scikit-learn / numpy / pandas / scipy. torch + transformers + sentencepiece are
+# required ONLY to compute ProtT5 / ESM-2 embeddings; CPU is sufficient
+# (mean-pooling only). Models auto-download from the Hugging Face hub on first use
+# (ProtT5-XL ~2.5 GB cache, ESM-2 35M ~150 MB).
+#
+# Archived local versions: torch 2.5.1, transformers 4.41.2, scikit-learn 1.6.1
+# (BASE-only ablations were also reproduced under scikit-learn 1.2.0).
+
+scikit-learn>=1.2
+numpy>=1.24
+pandas>=1.5
+scipy>=1.10
+
+# pLM embeddings (optional; needed for --features prott5,esm2)
+torch>=2.2
+transformers>=4.40
+sentencepiece>=0.1.99   # ProtT5 T5Tokenizer
+protobuf>=3.20

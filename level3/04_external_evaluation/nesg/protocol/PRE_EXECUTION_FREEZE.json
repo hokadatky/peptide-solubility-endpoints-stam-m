@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-16T10:26:45.184053+00:00",
+  "external_outcomes_historically_viewed": true,
+  "files": {
+    "protocol/ANALYSIS_PLAN.md": "0276bc2c684551cceb85cc7d897a567a5033e43cd90dc450e481e36c4594337d",
+    "protocol/resolved_config.json": "24564bbebf717748b2c99cb5bb3855ed36eb305aac98e31b4faeacdb860af802",
+    "src/external_runtime.py": "62f5e9b1910680fe4102101c8ab9559ae02c65f084a5ba4dd3f3fc3f8597cdc1",
+    "src/run_external.py": "d2b3178db04055f10c7c52ba4ae12393ba8c33449cc99dc553b7052424866a3b",
+    "vendor/analysis_addon/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vendor/analysis_addon/src/__init__.py": "d8133d62b44710d04f187b81141cfef5f2f3b5aba6f1def88722c67097ea4d81",
+    "vendor/analysis_addon/src/aggregate_release.py": "e9622c0a0551f57fe3617012cbb913744efeff3bdc965d1b1bf56c2b82d5e3f0",
+    "vendor/analysis_addon/src/clustered_stats.py": "f3f2e0e8614b072907cb22bd337b0677612c356ab64d885647ba66d0a7752039",
+    "vendor/analysis_addon/src/io_contracts.py": "b1731a58d17cc008db2ac24750f96e5fcc38f04f09ee0904f38ed9f717307b66",
+    "vendor/analysis_addon/src/negative_controls.py": "57ed2be31d0977625929d529f96c9d44518b213491e62190916e133e76ee31ab",
+    "vendor/analysis_addon/src/nested_models.py": "6f678af9aacb5e4b8e8e2ccd44af96174e2f8e35ccb0590c0ae5c341de76ad6c",
+    "vendor/analysis_addon/src/preflight.py": "3db1b73956ccd1f2139dbee3909783d5a08bbd77d8d780b806ef873914ff0d10",
+    "vendor/analysis_addon/src/privacy_reproducibility_audit.py": "57f1f55b3ea36ca70a932a40c500dcd3392563d77bf6fd3a56b820bda211fb21",
+    "vendor/analysis_addon/src/recover_v2.py": "6e3a1858d2140721bcb04248c9574390c656999538f8d7c30c6c3258c3508494",
+    "vendor/analysis_addon/src/resumable_models.py": "1d03177edaeadc2885bb3ba2fc963ff542f639d761b1c5ded7ae817691be7f7f",
+    "vendor/analysis_addon/src/run_modified_peptide_audit.py": "af41529689f4976186f259307f4da51a5bfce773f286a2dc5e56ca8e011036d7",
+    "vendor/analysis_addon/src/run_soluprot_reanalysis.py": "c08ec03ff55a7841baaf1581a5fd6c2d045705407c6d75905f83944f4f508d39",
+    "vendor/analysis_addon/src/run_soluprot_shift_audit.py": "0e03ca3c36846741e10eaf68ebcfda8dc547e98f11c1aeaf8f6a8ff298537858",
+    "vendor/analysis_addon/src/sequence_features.py": "835ce41629e31fb838917a99243456900baa46af8f77c815c07c6a5051377b3a",
+    "vendor/analysis_addon/src/split_contracts.py": "e9c964e64750fa084c1abb826e9e70f5fdf5f43b277b944204b5cdd5ba4dac23",
+    "vendor/analysis_addon/src/stage_utils.py": "2828518e32001c4a07dffe5e805ba94386b68f72013995210c1d1c993ee1e23c",
+    "vendor/analysis_addon/src/validate_v4_splits.py": "33b0e0ee7f300c029d4022fb1272416a7f60a2ddb2ab8f7d3ae47815e29eb5cd"
+  },
+  "new_execution_outcomes_not_parsed": true
+}

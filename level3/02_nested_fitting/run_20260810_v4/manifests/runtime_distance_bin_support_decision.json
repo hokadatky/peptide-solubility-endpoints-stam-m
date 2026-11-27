@@ -1,0 +1,14 @@
+{
+  "runtime": "v4_distance_bin_support_audit.py",
+  "runtime_sha256": "196e21753f3968e136c7e41f143f998111e59768df194319ec757c9f5bc61857",
+  "run_id": "addon_20260810_v4",
+  "purpose": "Post-stage audit of the external audit's minimum 20 positive-bearing and 20 negative-bearing groups per frozen identity quartile.",
+  "scientific_contract_changed": false,
+  "bins_changed": false,
+  "model_selection_changed": false,
+  "prediction_values_changed": false,
+  "self_test": "passed",
+  "self_test_reads_external_labels": false,
+  "execution_rule": "Run only after external-retrospective and shift-audit manifests exist; suppress sparse-bin inference in downstream wording if the post-stage gate fails.",
+  "output_policy": "aggregate diagnostics only; no record IDs, sequences, or row-level values in the output"
+}

@@ -1,0 +1,7 @@
+{
+  "reason": "Original local NPZ stored pandas identifier arrays as object dtype. Numeric predictions/labels remain unchanged; source-aligned Unicode IDs allow pickle-free loading. Original artifact retained unchanged.",
+  "original_sha256": "f94d4b4a0e3842f0fb57ac399dd87828b93b656eecdcd1fc221d11923cf170dd",
+  "safe_copy_sha256": "a4b982d63c5478acf66ec4e145c1361a4d4e17ec762a37c4dc8504809212a26a",
+  "numeric_predictions_unchanged": true,
+  "record_order_verified_against_preseal_hash": true
+}

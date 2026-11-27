@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "model_replay_arms": 5,
+  "selection_and_training_local_transform_checks": true,
+  "independent_metrics": true,
+  "independent_row_expansion_bootstrap_replicates": 10000,
+  "ci95_and_three_comparison_bonferroni_ci_match": true,
+  "original_B1_max_prediction_difference": 0.0,
+  "parent_evidence_files_unchanged": 43,
+  "original_submission_and_repository_files_unchanged": 531,
+  "unexpected_changes": [],
+  "models_refitted_by_verifier": false
+}

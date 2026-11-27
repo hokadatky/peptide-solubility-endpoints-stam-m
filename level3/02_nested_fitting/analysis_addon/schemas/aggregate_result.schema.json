@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["status", "analysis_scope", "contains_row_level_data", "contains_sequences", "contains_record_ids"],
+  "properties": {
+    "status": {"type": "string"},
+    "analysis_scope": {"const": "retrospective_data_informed"},
+    "contains_row_level_data": {"const": false},
+    "contains_sequences": {"const": false},
+    "contains_record_ids": {"const": false}
+  },
+  "additionalProperties": true
+}

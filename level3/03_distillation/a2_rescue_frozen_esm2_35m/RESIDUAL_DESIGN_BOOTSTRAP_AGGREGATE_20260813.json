@@ -1,0 +1,146 @@
+{
+  "auc_margin_to_80pct_target": {
+    "ci95": [
+      -0.014697425805704517,
+      0.010915498718470858
+    ],
+    "point": -0.002042115006363643,
+    "probability_nonnegative_under_bootstrap": 0.3693
+  },
+  "bootstrap_seed": 20260813,
+  "bootstrap_unit": "30pct_identity_cluster",
+  "cluster_swap_auc_test": {
+    "n_replicates": 999,
+    "null_ci95": [
+      -0.007369973876029873,
+      0.007184396256173347
+    ],
+    "null_median": 1.370138292622336e-05,
+    "observed_gain": 0.022622505587119424,
+    "p_value_two_sided": 0.001,
+    "seed": 20260813,
+    "unit": "cluster_swap"
+  },
+  "confirmation_fold_loaded": false,
+  "distilled_minus_b1_auc": {
+    "bootstrap_mean": 0.05404666682257373,
+    "bootstrap_sd": 0.0059412227474179465,
+    "bootstrap_seed": 20260813,
+    "bootstrap_unit": "cluster",
+    "ci90": [
+      0.04444779367476161,
+      0.06379439675060508
+    ],
+    "ci95": [
+      0.042687558292628255,
+      0.0658090848424135
+    ],
+    "invalid_fraction": 0.0,
+    "metric": "roc_auc",
+    "n_groups": 1531,
+    "n_replicates_invalid": 0,
+    "n_replicates_requested": 10000,
+    "n_replicates_valid": 10000,
+    "point_gain": 0.05400019486411267
+  },
+  "distilled_minus_identical_hard_control": {
+    "auprc": {
+      "bootstrap_mean": 0.018694758022837245,
+      "bootstrap_sd": 0.002983698401113495,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.013816970209391766,
+        0.02371463226907473
+      ],
+      "ci95": [
+        0.012966710419735118,
+        0.024619808357320902
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "auprc",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.018701338695527925
+    },
+    "brier": {
+      "bootstrap_mean": 0.00608253445441441,
+      "bootstrap_sd": 0.0015045227267580607,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.003589064793526689,
+        0.008546034251213211
+      ],
+      "ci95": [
+        0.003128049762389421,
+        0.008982995441146238
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "brier",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.006086059321160658
+    },
+    "log_loss": {
+      "bootstrap_mean": 0.009672813603779607,
+      "bootstrap_sd": 0.004001155188333048,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.003025777356339732,
+        0.016161924267592515
+      ],
+      "ci95": [
+        0.0017085148078849145,
+        0.017419152061567272
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "log_loss",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.00967591944876478
+    },
+    "roc_auc": {
+      "bootstrap_mean": 0.0226329092998624,
+      "bootstrap_sd": 0.003367387294493121,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.01712013367393502,
+        0.028242438092931352
+      ],
+      "ci95": [
+        0.01615501786099114,
+        0.029319970830644526
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "roc_auc",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.022622505587119424
+    }
+  },
+  "interpretation": "Design-fold uncertainty only; not a new untouched confirmation.",
+  "replicates_requested": 10000,
+  "schema": "residual-distillation-design-bootstrap-v1",
+  "status": "EXPLORATORY_DESIGN_ONLY",
+  "teacher_gain_retention": {
+    "ci95": [
+      0.6165252043769033,
+      0.9901513621224587
+    ],
+    "invalid_replicates": 0,
+    "point": 0.7708489530701602,
+    "probability_at_least_0_8_under_bootstrap": 0.3693,
+    "valid_replicates": 10000
+  }
+}

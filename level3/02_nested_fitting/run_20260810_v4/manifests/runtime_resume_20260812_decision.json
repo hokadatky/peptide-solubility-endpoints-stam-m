@@ -1,0 +1,85 @@
+{
+  "schema": "v4_runtime_resume_decision_v1",
+  "run_id": "addon_20260810_v4",
+  "scientific_contract_changed": false,
+  "scope": "phase_b_checkpoint_resume_and_reload_only",
+  "counts_at_original_resume_start": {
+    "primary": 35,
+    "stability": 48,
+    "negative_control": 26
+  },
+  "counts_at_power_stop": {
+    "primary": 35,
+    "stability": 61,
+    "negative_control": 50
+  },
+  "counts_before_this_resume": {
+    "primary": 35,
+    "stability": 61,
+    "negative_control": 50
+  },
+  "counts_after": {
+    "primary": 35,
+    "stability": 70,
+    "negative_control": 50
+  },
+  "new_stability_checkpoints_this_resume": 9,
+  "power_stop": {
+    "occurred_at_jst": "2026-08-12T12:27:00+09:00",
+    "reason": "Battery Power at 17 percent with approximately 10 minutes remaining",
+    "atomic_checkpoint_contract_preserved": true,
+    "temporary_or_partial_files_after_stop": 0
+  },
+  "execution": {
+    "resume_session_id": 47372,
+    "stability_reload_session_id": 15941,
+    "negative_reload_session_id": 65571,
+    "stability_candidate_workers": 2,
+    "stability_reference_workers": 1,
+    "negative_reload_workers": 1,
+    "openblas_threads_per_worker": 4,
+    "max_concurrent_model_workers": 3,
+    "duplicate_target_ownership_observed": false,
+    "phase_c_started": false
+  },
+  "reload_validation": {
+    "stability_artifacts": 70,
+    "stability_worker_returncodes_all_zero": true,
+    "stability_created": 0,
+    "stability_validated_existing": 70,
+    "negative_control_artifacts": 50,
+    "negative_worker_returncodes_all_zero": true,
+    "negative_created": 0,
+    "negative_validated_existing": 50,
+    "npz_inventory_files": 155,
+    "npz_sha256_inventory_unchanged": true,
+    "status": "passed"
+  },
+  "logging_note": "The first 2026-08-12 stability resume tee did not open because the log directory was created concurrently. Checkpoint execution remained valid. This post-power-stop resume log contains the complete 70-task scheduler traversal. The scientific contract and checkpoint results were not changed by the logging race.",
+  "commands": [
+    "cd ${WORKSPACE} && set -o pipefail && env OPENBLAS_NUM_THREADS=4 caffeinate -dimsu python -B -u paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/private_tools/v4_parallel_scheduler.py --phase stability --candidate-workers 2 --reference-workers 1 2>&1 | tee -a paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/logs/stability_resume_after_power_stop_20260812.log",
+    "cd ${WORKSPACE} && set -o pipefail && env OPENBLAS_NUM_THREADS=4 python -B -u paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/private_tools/v4_parallel_scheduler.py --phase stability --candidate-workers 2 --reference-workers 1 2>&1 | tee paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/logs/stability_reload_validation_after_power_stop_20260812.log",
+    "cd ${WORKSPACE} && set -o pipefail && env OPENBLAS_NUM_THREADS=4 python -B -u paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/private_tools/v4_parallel_scheduler.py --phase negative-control --negative-workers 1 2>&1 | tee paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/logs/negative_reload_validation_after_power_stop_20260812.log"
+  ],
+  "logs": [
+    "logs/stability_resume_after_power_stop_20260812.log",
+    "logs/stability_reload_validation_after_power_stop_20260812.log",
+    "logs/negative_reload_validation_after_power_stop_20260812.log",
+    "logs/checkpoint_sha256_before_reload_20260812.txt",
+    "logs/checkpoint_sha256_after_reload_20260812.txt"
+  ],
+  "frozen_hashes": {
+    "config_sha256": "f5474cb07f86cb6a7dc8d789a8a8cb2a062df740a2901314ddcb62a2423dfe60",
+    "source_tree_sha256": "37a743ee5d1cb6aa857f69fb36bf2014319c45d18db2cba1d61427b74d2f02cc",
+    "freeze_sha256": "b675678ae6d2b21917591001d41ec6e87a8f64ef0f1ff9ef1df37b16520a6eb5",
+    "author_decision_sha256": "c5f9399748500aaf5209970ccbf913edda1dd7f339c6d9aaa499faff8b13ef6a",
+    "scheduler_sha256": "6d7184350b5ee77d437a814a15715a8771cf760df36d535fad12d3551188e84d",
+    "worker_sha256": "b6ba5eb1240ff643dbc02a37843bcbb2c5720fdd3806a5d36203beb47b98829e"
+  },
+  "resume_start_time_jst": "2026-08-12T15:28:10+09:00",
+  "resume_end_time_jst": "2026-08-12T16:15:11+09:00",
+  "contains_row_level_data": false,
+  "contains_sequences": false,
+  "contains_record_ids": false,
+  "status": "completed"
+}

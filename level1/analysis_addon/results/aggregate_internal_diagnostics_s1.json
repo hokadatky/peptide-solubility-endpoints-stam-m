@@ -1,0 +1,105 @@
+{
+  "analysis_scope": "retrospective_data_informed",
+  "arms": {
+    "B1_ORDER_LOGIT": {
+      "brier": 0.21303168877322712,
+      "calibration_intercept": -0.028322003443225018,
+      "calibration_slope": 0.7126595977131277,
+      "log_loss": 0.6115954943534385,
+      "pr_auc": 0.7423662792916608
+    },
+    "B1_ORDER_PLUS_PROTT5_PLS_LOGIT": {
+      "brier": 0.1904001256817954,
+      "calibration_intercept": -0.025574958788744374,
+      "calibration_slope": 0.69547895458183,
+      "log_loss": 0.5635515651002654,
+      "pr_auc": 0.8013552163792494
+    }
+  },
+  "compute": {
+    "mmseqs2": {
+      "arguments": "--min-seq-id 0.30 -c 0.80 --cov-mode 0 --cluster-mode 1 -s 7.5",
+      "version": "17-b804"
+    },
+    "prott5": {
+      "affected_sequences": 379,
+      "chunking": "non-overlapping 900-residue chunks",
+      "dimension": 1024,
+      "embedding_wall_seconds": 9241.855,
+      "hardware": "CPU",
+      "model": "Rostlab/prot_t5_xl_half_uniref50-enc",
+      "peak_rss_bytes": 7888699392,
+      "pooling": "arithmetic mean over residue embeddings; special tokens excluded",
+      "revision": "94a6abc029ae13029317b140b7424e012bf8dfbf"
+    }
+  },
+  "contains_record_ids": false,
+  "contains_row_level_data": false,
+  "contains_sequences": false,
+  "convergence": {
+    "failures": 0,
+    "flags_checked": 12026,
+    "warnings": 0
+  },
+  "endpoint": "recombinant soluble-expression status in Escherichia coli; not direct aqueous solubility",
+  "negative_control": {
+    "n_replicates": 50,
+    "role": "gross leakage/alignment gate; not a p-value",
+    "status": "PASSED"
+  },
+  "provenance": {
+    "canonical_manifest": {
+      "basename": "internal-primary.json",
+      "sha256": "1a87741fdc7d49077d67c58327256ed169f611fb9a419491f229f1581c676b82"
+    },
+    "canonical_result": {
+      "basename": "internal_primary.json",
+      "sha256": "e5ee9773ee56ce0c1815fe2434468907c16138e09583624e981f6708ad1e0c6e"
+    },
+    "config": {
+      "basename": "analysis_config_v4.yaml",
+      "sha256": "f5474cb07f86cb6a7dc8d789a8a8cb2a062df740a2901314ddcb62a2423dfe60"
+    },
+    "preflight_manifest": {
+      "basename": "preflight_manifest.json",
+      "sha256": "c031d443cc84b9d0100a695860dcd025696f0731527ff6aadfa26b19e7666f4a"
+    },
+    "release_script": {
+      "basename": "release_internal_diagnostics_s1.py",
+      "sha256": "2249ce5f398cc186069d8695f4d7b1e0adcd8b2d859f9947987b2ac2c3c13742"
+    }
+  },
+  "schema": "s1_privacy_safe_internal_diagnostics_v1",
+  "selected_hyperparameters": {
+    "B1_ORDER_LOGIT": {
+      "outer_folds": 7,
+      "selected_c_counts": {
+        "1000": 7
+      },
+      "selected_k_counts": {}
+    },
+    "B1_ORDER_PLUS_PROTT5_PLS_LOGIT": {
+      "outer_folds": 7,
+      "selected_c_counts": {
+        "1000": 5,
+        "10000": 2
+      },
+      "selected_k_counts": {
+        "5": 1,
+        "8": 6
+      }
+    }
+  },
+  "split": {
+    "class_counts": {
+      "negative": 5718,
+      "positive": 5718
+    },
+    "inner_folds": 5,
+    "n_groups": 10715,
+    "n_rows": 11436,
+    "outer_folds": 7,
+    "singleton_group_fraction": 0.9361642557162856
+  },
+  "status": "completed"
+}

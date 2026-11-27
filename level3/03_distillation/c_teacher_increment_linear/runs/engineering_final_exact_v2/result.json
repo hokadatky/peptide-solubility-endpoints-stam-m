@@ -1,0 +1,49 @@
+{
+  "scope": "original fitted scaler arithmetic, float32 correction/float64 baseline; full sequence-to-score; one BLAS thread; synthetic timing inputs; no teacher latency measured",
+  "portable_sha256": "c390c7e7e7a2d1104911fc6eaade0d2b4bcfef6258fa231eb8e26962bf66a57d",
+  "source_npz_bytes": 58276,
+  "inference_coefficients": 2925,
+  "normalization_constants": 5846,
+  "array_bytes": 60172,
+  "parity_all_oof_rows": {
+    "2": 2.2110091535409993e-13,
+    "3": 1.82576176399607e-13,
+    "4": 1.6253665080512292e-13,
+    "5": 1.6725509865977983e-13,
+    "6": 1.9473311851925246e-13
+  },
+  "auc_delta_export_per_fold": {
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0
+  },
+  "timings": {
+    "100": {
+      "median_ms": 0.304896,
+      "p95_ms": 0.3605913499999999
+    },
+    "300": {
+      "median_ms": 0.40764599999999995,
+      "p95_ms": 0.4556045
+    },
+    "500": {
+      "median_ms": 0.513437,
+      "p95_ms": 0.5315931500000001
+    },
+    "1000": {
+      "median_ms": 0.76125,
+      "p95_ms": 0.8063485499999999
+    },
+    "2825": {
+      "median_ms": 1.6767295,
+      "p95_ms": 1.7624020999999999
+    }
+  },
+  "batch": 1,
+  "warmups": 20,
+  "repeats": 100,
+  "platform": "macOS-15.4-arm64-arm-64bit",
+  "numpy": "1.26.4"
+}

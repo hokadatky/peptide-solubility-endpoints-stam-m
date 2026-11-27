@@ -1,0 +1,55 @@
+{
+  "elapsed_seconds": 1.1278457500011427,
+  "fixed_teacher_plumbing": {
+    "elapsed_seconds": 0.06088287499733269,
+    "fit_rows": 48,
+    "output_finite_and_in_range": true,
+    "performance_metrics_computed": false,
+    "score_rows": 16,
+    "teacher": "B1 plus ProtT5 PLS-8 fixed L2 logistic"
+  },
+  "privacy": {
+    "contains_labels": false,
+    "contains_record_ids": false,
+    "contains_row_level_predictions": false,
+    "contains_sequences": false,
+    "contains_teacher_targets": false
+  },
+  "scope": "engineering dry run only; no scientific performance estimate",
+  "status": "PASS",
+  "student": {
+    "name": "TriPepLite-v1",
+    "numpy_artifact_bytes": 988428,
+    "numpy_artifact_sha256_ephemeral": "dd0516dd9c74a711a27517068f5685354aaaae001e4a743d03967ba774672685",
+    "parameter_count": 265633,
+    "teacher_required_at_inference": false,
+    "torch_numpy_probability_max_abs_difference": 6.020772158610299e-08
+  },
+  "synthetic": {
+    "epochs": 5,
+    "final_total_loss": 1.556098182996114,
+    "initial_total_loss": 1.7372904221216838,
+    "loss_finite": true,
+    "output_finite_and_in_range": true,
+    "rows": 96
+  },
+  "tiny_real": {
+    "descriptor_dimension": 25,
+    "epochs": 2,
+    "loss_finite": true,
+    "observed_length_max": 2813,
+    "observed_length_min": 45,
+    "output_shape_correct": true,
+    "performance_metrics_computed": false,
+    "row_level_material_written": false,
+    "rows": 64,
+    "source_folds": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "unique_groups_required_by_selection": true
+  }
+}

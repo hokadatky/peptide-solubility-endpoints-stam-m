@@ -1,0 +1,125 @@
+{
+  "b1_auc": 0.695492853967616,
+  "confirmation_fold_loaded": false,
+  "distillation_alpha": 0.75,
+  "endpoint": "recombinant soluble-expression status in E. coli",
+  "evaluation_fold": 0,
+  "evaluation_groups": 1531,
+  "evaluation_rows": 1621,
+  "explicit_exclusion": "not direct aqueous solubility of a purified peptide",
+  "exploratory_only": true,
+  "gates": {
+    "B1_SOFT_LOGIT": {
+      "distillation_gain_gate_pass": false,
+      "hard_arm": "B1_SOFT_HARD_CONTROL",
+      "hard_auc": 0.6899042121095867,
+      "overall_pass": false,
+      "retention_gate_pass": false,
+      "soft_arm": "B1_SOFT_STUDENT",
+      "soft_auc": 0.6888233252342937,
+      "soft_minus_hard_auc": -0.0010808868752930634,
+      "teacher_gain_retention": -0.09648610851108194
+    },
+    "HASHED_2_5MER": {
+      "distillation_gain_gate_pass": false,
+      "hard_arm": "HASHED_HARD_CONTROL",
+      "hard_auc": 0.6794858327700543,
+      "overall_pass": false,
+      "retention_gate_pass": false,
+      "soft_arm": "HASHED_SOFT_STUDENT",
+      "soft_auc": 0.6774405207743414,
+      "soft_minus_hard_auc": -0.002045311995712895,
+      "teacher_gain_retention": -0.26115778925460326
+    },
+    "LEGACY_ESM2_35M": {
+      "distillation_gain_gate_pass": false,
+      "hard_arm": "LEGACY_ESM35M_HARD_CONTROL",
+      "hard_auc": 0.7480361351139042,
+      "overall_pass": false,
+      "retention_gate_pass": false,
+      "soft_arm": "LEGACY_ESM35M_SOFT_STUDENT",
+      "soft_auc": 0.7450781587777149,
+      "soft_minus_hard_auc": -0.0029579763361893274,
+      "teacher_gain_retention": 0.7173360055499893
+    }
+  },
+  "group_overlap": 0,
+  "mechanisms": {
+    "B1_SOFT_LOGIT": {
+      "feature_count": 425
+    },
+    "HASHED_2_5MER": {
+      "feature_count": 65961
+    },
+    "LEGACY_ESM2_35M": {
+      "diagnostic_only": true,
+      "feature_count": 905,
+      "reason": "legacy special-token pooling and 700-residue truncation"
+    }
+  },
+  "metrics": {
+    "B1_ORDER_LOGIT": {
+      "average_precision": 0.7114809792460992,
+      "brier": 0.22264913415799256,
+      "log_loss": 0.6466796426347658,
+      "roc_auc": 0.695492853967616
+    },
+    "B1_SOFT_HARD_CONTROL": {
+      "average_precision": 0.6964562240192651,
+      "brier": 0.22490010359616885,
+      "log_loss": 0.6445766216948775,
+      "roc_auc": 0.6899042121095867
+    },
+    "B1_SOFT_STUDENT": {
+      "average_precision": 0.6963882241648087,
+      "brier": 0.2250689137879054,
+      "log_loss": 0.6444297569276165,
+      "roc_auc": 0.6888233252342937
+    },
+    "HASHED_HARD_CONTROL": {
+      "average_precision": 0.6668268019291816,
+      "brier": 0.3337282701957425,
+      "log_loss": 2.5499130183838434,
+      "roc_auc": 0.6794858327700543
+    },
+    "HASHED_SOFT_STUDENT": {
+      "average_precision": 0.6719878696273964,
+      "brier": 0.2951338673011462,
+      "log_loss": 1.2189767944013588,
+      "roc_auc": 0.6774405207743414
+    },
+    "LEGACY_ESM35M_HARD_CONTROL": {
+      "average_precision": 0.7497891182157519,
+      "brier": 0.20802492609494996,
+      "log_loss": 0.6095697443826774,
+      "roc_auc": 0.7480361351139042
+    },
+    "LEGACY_ESM35M_SOFT_STUDENT": {
+      "average_precision": 0.744520091290525,
+      "brier": 0.20661185705019974,
+      "log_loss": 0.6023987959775426,
+      "roc_auc": 0.7450781587777149
+    },
+    "PROTT5_TEACHER": {
+      "average_precision": 0.7701094834109876,
+      "brier": 0.20312280301957794,
+      "log_loss": 0.6094132319844044,
+      "roc_auc": 0.7646170920184877
+    }
+  },
+  "private_prediction_path": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_distillation_rescue_run_20260813_v2/design_predictions.parquet",
+  "required_student_auc": 0.7507922444083134,
+  "retention_target": 0.8,
+  "runtime_seconds": 82.3069429397583,
+  "schema": "distillation-rescue-design-dry-run-v1",
+  "selected_candidate": null,
+  "status": "STOP",
+  "teacher_auc": 0.7646170920184877,
+  "train_folds": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}

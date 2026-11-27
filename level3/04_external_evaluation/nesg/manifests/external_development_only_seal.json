@@ -1,0 +1,2858 @@
+{
+  "analysis_scope": "retrospective_data_informed",
+  "arms": {
+    "B1_ORDER_LOGIT": {
+      "calibrated_external_prediction_sha256": "578a9d7477e5a96df59ef3ba237f6eeb60cc2aa2426100bd7a5f587e359335af",
+      "calibration_n": 1617,
+      "checkpoint_sha256": "df052842bb05bfe913e48108a042150d1f81de80bd1091b236c3a09f8133f7a3",
+      "development_seal_diagnostics": {
+        "calibration": {
+          "coefficients_finite": true,
+          "converged": true,
+          "convergence_warning": false,
+          "max_iter": 20000,
+          "n_iter": [
+            7
+          ],
+          "solver": "lbfgs",
+          "tol": 0.0001,
+          "warnings": []
+        },
+        "n_calibration": 1617,
+        "n_fit": 8198,
+        "n_model_selection": 1621,
+        "n_refit": 9819,
+        "refit": {
+          "logistic": {
+            "coefficients_finite": true,
+            "converged": true,
+            "convergence_warning": false,
+            "max_iter": 20000,
+            "n_iter": [
+              3520
+            ],
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "warnings": []
+          },
+          "pls": null
+        },
+        "selected": [
+          null,
+          10000.0
+        ],
+        "selection_grid": [
+          {
+            "c": 10000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                4336
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.6963864886095836,
+            "pls": null,
+            "pls_k": null
+          },
+          {
+            "c": 1000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                3175
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.6954228246771041,
+            "pls": null,
+            "pls_k": null
+          },
+          {
+            "c": 100.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                1952
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.6938547775199888,
+            "pls": null,
+            "pls_k": null
+          },
+          {
+            "c": 10.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                636
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.692438967950943,
+            "pls": null,
+            "pls_k": null
+          },
+          {
+            "c": 1.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                246
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.6899194358683937,
+            "pls": null,
+            "pls_k": null
+          },
+          {
+            "c": 0.1,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                102
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.6866508948525427,
+            "pls": null,
+            "pls_k": null
+          },
+          {
+            "c": 0.01,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                47
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.6726922304024552,
+            "pls": null,
+            "pls_k": null
+          },
+          {
+            "c": 0.001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                21
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.6666681890425474,
+            "pls": null,
+            "pls_k": null
+          },
+          {
+            "c": 0.0001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                13
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.6632504551903883,
+            "pls": null,
+            "pls_k": null
+          }
+        ]
+      },
+      "raw_external_prediction_sha256": "34a6c3ece32e42590c81ed94a808b2362327d3703ba71189e94e54fefe191967",
+      "selected": [
+        null,
+        10000.0
+      ]
+    },
+    "B1_ORDER_PLUS_PROTT5_PLS_LOGIT": {
+      "calibrated_external_prediction_sha256": "1296bf16ea58a28009fba3e65389709eba9c8aa54c186fab4708dd4f8638391a",
+      "calibration_n": 1617,
+      "checkpoint_sha256": "7b8ef4797aa9da5093b9821aa8444576c9109e917724e7787c95fe3270439687",
+      "development_seal_diagnostics": {
+        "calibration": {
+          "coefficients_finite": true,
+          "converged": true,
+          "convergence_warning": false,
+          "max_iter": 20000,
+          "n_iter": [
+            8
+          ],
+          "solver": "lbfgs",
+          "tol": 0.0001,
+          "warnings": []
+        },
+        "n_calibration": 1617,
+        "n_fit": 8198,
+        "n_model_selection": 1621,
+        "n_refit": 9819,
+        "refit": {
+          "logistic": {
+            "coefficients_finite": true,
+            "converged": true,
+            "convergence_warning": false,
+            "max_iter": 20000,
+            "n_iter": [
+              4873
+            ],
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "warnings": []
+          },
+          "pls": {
+            "converged": true,
+            "convergence_warning": false,
+            "max_iter": 500,
+            "n_components": 16,
+            "n_iter": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "projected_finite": true,
+            "projection_rank": 16,
+            "tol": 1e-06,
+            "warnings": []
+          }
+        },
+        "selected": [
+          16,
+          10000.0
+        ],
+        "selection_grid": [
+          {
+            "c": 10000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                3497
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7691697570897044,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 16,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 16
+          },
+          {
+            "c": 100.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                1624
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7687648051054398,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 16,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 16
+          },
+          {
+            "c": 1000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                2538
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7687145667013768,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 16,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 16
+          },
+          {
+            "c": 10.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                799
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7685714633685916,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 16,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 16
+          },
+          {
+            "c": 1.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                243
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7677067538683571,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 16,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 16
+          },
+          {
+            "c": 0.1,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                102
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7659803796196496,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 16,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 16
+          },
+          {
+            "c": 1000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                2767
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7651933112893305,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 8,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 8
+          },
+          {
+            "c": 10000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                3702
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7651735204028816,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 8,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 8
+          },
+          {
+            "c": 100.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                1152
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7646528678516841,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 8,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 8
+          },
+          {
+            "c": 10.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                694
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7643209899096928,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 8,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 8
+          },
+          {
+            "c": 0.01,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                47
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7642890200161981,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 16,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 16
+          },
+          {
+            "c": 1.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                240
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7636404878910222,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 8,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 8
+          },
+          {
+            "c": 0.001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                21
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7628244944189699,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 16,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 16
+          },
+          {
+            "c": 0.1,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                103
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7621287686414926,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 8,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 8
+          },
+          {
+            "c": 0.001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                21
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7613477898146964,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 8,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 8
+          },
+          {
+            "c": 0.01,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                47
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7606292283990086,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 8,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 8
+          },
+          {
+            "c": 1000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                3117
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7596609973388869,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 5,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 5
+          },
+          {
+            "c": 10000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                2833
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7595848785448522,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 5,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 5
+          },
+          {
+            "c": 10.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                652
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7593412984039412,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 5,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 5
+          },
+          {
+            "c": 100.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                1662
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7593123732622079,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 5,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 5
+          },
+          {
+            "c": 1.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                265
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7584476637619735,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 5,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 5
+          },
+          {
+            "c": 0.1,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                102
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7564929331311618,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 5,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 5
+          },
+          {
+            "c": 100.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                1324
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7558824604030034,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 3,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 3
+          },
+          {
+            "c": 10.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                752
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7556708501555868,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 3,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 3
+          },
+          {
+            "c": 10000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                3189
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7556419250138536,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 3,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 3
+          },
+          {
+            "c": 1000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                2532
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7554181357593915,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 3,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 3
+          },
+          {
+            "c": 1.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                232
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7550603774274284,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 3,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 3
+          },
+          {
+            "c": 0.001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                21
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7546112765426235,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 5,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 5
+          },
+          {
+            "c": 0.01,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                47
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7543935767916842,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 5,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 5
+          },
+          {
+            "c": 0.1,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                96
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7542717867212286,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 3,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 3
+          },
+          {
+            "c": 0.01,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                47
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7516335093199852,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 3,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 3
+          },
+          {
+            "c": 0.001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                20
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7485126387645615,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 3,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 3
+          },
+          {
+            "c": 10.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                623
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.746586833275483,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 2,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 2
+          },
+          {
+            "c": 100.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                1690
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7463204174963616,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 2,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 2
+          },
+          {
+            "c": 1000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                3138
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.746174269411815,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 2,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 2
+          },
+          {
+            "c": 10000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                3297
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7459641815402791,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 2,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 2
+          },
+          {
+            "c": 1.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                266
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.745720601399368,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 2,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 2
+          },
+          {
+            "c": 0.1,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                97
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.744615356509984,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 2,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 2
+          },
+          {
+            "c": 0.01,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                47
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7400543183714232,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 2,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 2
+          },
+          {
+            "c": 0.0001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                12
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7344169604852117,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 16,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 16
+          },
+          {
+            "c": 0.001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                20
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7310311965265472,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 2,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 2
+          },
+          {
+            "c": 0.0001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                12
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7308165415273692,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 8,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 8
+          },
+          {
+            "c": 0.0001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                13
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.725377092505648,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 5,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 5
+          },
+          {
+            "c": 100.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                1509
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7250787068330319,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 1,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 1
+          },
+          {
+            "c": 1000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                3612
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.725048259315418,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 1,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 1
+          },
+          {
+            "c": 10000.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                3351
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7249447377555308,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 1,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 1
+          },
+          {
+            "c": 10.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                718
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7248457833232855,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 1,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 1
+          },
+          {
+            "c": 1.0,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                247
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7239932528300969,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 1,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 1
+          },
+          {
+            "c": 0.1,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                114
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7223993252830095,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 1,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 1
+          },
+          {
+            "c": 0.0001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                13
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7181366728170653,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 3,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 3
+          },
+          {
+            "c": 0.01,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                52
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7157176175426417,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 1,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 1
+          },
+          {
+            "c": 0.001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                20
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7111641912834847,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 1,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 1
+          },
+          {
+            "c": 0.0001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                13
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.7006278278131984,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 2,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 2
+          },
+          {
+            "c": 0.0001,
+            "eligible": true,
+            "logistic": {
+              "coefficients_finite": true,
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 20000,
+              "n_iter": [
+                13
+              ],
+              "solver": "lbfgs",
+              "tol": 0.0001,
+              "warnings": []
+            },
+            "model_selection_roc_auc": 0.6922334472070493,
+            "pls": {
+              "converged": true,
+              "convergence_warning": false,
+              "max_iter": 500,
+              "n_components": 16,
+              "n_iter": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "prefix_rank": 1,
+              "projected_finite": true,
+              "projection_rank": 16,
+              "tol": 1e-06,
+              "warnings": []
+            },
+            "pls_k": 1
+          }
+        ]
+      },
+      "raw_external_prediction_sha256": "f900c3ed71bb9f059a6ce7f82a89021f90509e554d5d5af84b9399849ef6474f",
+      "selected": [
+        16,
+        10000.0
+      ]
+    }
+  },
+  "development_partition_group_hash": "55a40fca06f3ffb42c2a5a49220b1e9c40b4312e52de881f9e58bdb2f7a85f8d",
+  "external_outcome_values_parsed_or_used_by_this_runtime_before_seal": false,
+  "historical_external_outcomes_previously_viewed": true,
+  "new_run_freeze_sha256": "2ee9ef49e268cbc5cfc47c364a1d7a9d412e6be08b5cf474d4951ddc8a9bb898",
+  "partition_rows": {
+    "calibration": 1617,
+    "fit": 8198,
+    "model_selection": 1621
+  },
+  "preseal_input_hashes": {
+    "development_b1": "3ada8dfa2790a15b5c63e7fc5ce5e0744b0a1a7dcba9768ac038e289bc2f06fc",
+    "development_embedding": "05fbef5cec46313a3067836ea5bfc56b4b0a81505787af278bf671eb8fd16d1b",
+    "external_b1": "a2c2ca3ab6a1fb9098d34c059a0c60a3c3bdd674e1391a14c667815b6ae11dde",
+    "external_embedding": "e6fb6c9bd5d4b56145e4e9afaa0d28593e06a3f6a732545815d339d3be23ee62",
+    "external_record_order": "603140366018ea727d2d0e1d408c97c82e7a18486ee6ec63881030658a3a1ac3"
+  },
+  "run_id": "stam_nesg_external_20261016",
+  "schema": "external_development_only_seal_v2_strict_io",
+  "sealed_at_utc": "2026-10-16T10:29:29.995925+00:00"
+}

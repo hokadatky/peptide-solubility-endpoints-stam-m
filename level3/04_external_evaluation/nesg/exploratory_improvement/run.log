@@ -1,0 +1,228 @@
+Input audit PASS; development-only model selection begins
+B1_LOGIT k=0 development grid complete
+B1_LOGIT selected {'k': 0, 'C': 10000.0, 'selection_auc': 0.6963864886095836, 'eligible': True}; predictions saved, external metrics not computed
+FULL_LOGIT k=1024 development grid complete
+FULL_LOGIT selected {'k': 1024, 'C': 0.001, 'selection_auc': 0.776655279295079, 'eligible': True}; predictions saved, external metrics not computed
+PCA_LOGIT k=64 development grid complete
+PCA_LOGIT k=128 development grid complete
+PCA_LOGIT k=256 development grid complete
+PCA_LOGIT selected {'k': 256, 'C': 10000.0, 'selection_auc': 0.758803899718056, 'eligible': True}; predictions saved, external metrics not computed
+B1_HGB k=0 development grid complete
+B1_HGB selected {'k': 0, 'max_leaf_nodes': 31, 'min_samples_leaf': 50, 'l2_regularization': 10.0, 'selection_auc': 0.6956481363074468, 'eligible': True}; predictions saved, external metrics not computed
+PCA_HGB k=64 development grid complete
+PCA_HGB k=128 development grid complete
+PCA_HGB selected {'k': 128, 'max_leaf_nodes': 15, 'min_samples_leaf': 20, 'l2_regularization': 10.0, 'selection_auc': 0.7724733127508114, 'eligible': True}; predictions saved, external metrics not computed
+All five arms sealed; evaluating external outcomes
+{
+  "scope": "post-NESG-result exploratory model development; no confirmatory claim",
+  "completed_at_utc": "2026-10-16T10:51:50.983208+00:00",
+  "n_external": 3100,
+  "groups_external": 2723,
+  "external_positive": 1550,
+  "arms": {
+    "B1_LOGIT": {
+      "raw": {
+        "auc": 0.5367812695109261,
+        "average_precision": 0.5077042590647699,
+        "brier": 0.2994629962195379,
+        "log_loss": 1.0273933199148342
+      },
+      "calibrated": {
+        "auc": 0.5367808532778355,
+        "average_precision": 0.5072741515378882,
+        "brier": 0.284557924056582,
+        "log_loss": 0.8788972190361226
+      },
+      "selected": {
+        "k": 0,
+        "C": 10000.0,
+        "selection_auc": 0.6963864886095836,
+        "eligible": true
+      },
+      "calibration_partition_raw_metrics": {
+        "auc": 0.7068643199167776,
+        "average_precision": 0.7357085057211129,
+        "brier": 0.21612470311727527,
+        "log_loss": 0.6184298518648572
+      }
+    },
+    "FULL_LOGIT": {
+      "raw": {
+        "auc": 0.5564258064516129,
+        "average_precision": 0.544318176063197,
+        "brier": 0.28704276710855353,
+        "log_loss": 0.8064613685955285
+      },
+      "calibrated": {
+        "auc": 0.5564258064516129,
+        "average_precision": 0.544318176063197,
+        "brier": 0.2918772770724096,
+        "log_loss": 0.8260903780668756
+      },
+      "selected": {
+        "k": 1024,
+        "C": 0.001,
+        "selection_auc": 0.776655279295079,
+        "eligible": true
+      },
+      "calibration_partition_raw_metrics": {
+        "auc": 0.799313109061147,
+        "average_precision": 0.7993068429648252,
+        "brier": 0.1828067854564379,
+        "log_loss": 0.5419654237658442
+      }
+    },
+    "PCA_LOGIT": {
+      "raw": {
+        "auc": 0.5390476586888658,
+        "average_precision": 0.5101680948580041,
+        "brier": 0.3191039377318425,
+        "log_loss": 1.092055639464711
+      },
+      "calibrated": {
+        "auc": 0.5390476586888658,
+        "average_precision": 0.5101680948580041,
+        "brier": 0.30060475467554976,
+        "log_loss": 0.9383558567301985
+      },
+      "selected": {
+        "k": 256,
+        "C": 10000.0,
+        "selection_auc": 0.758803899718056,
+        "eligible": true
+      },
+      "calibration_partition_raw_metrics": {
+        "auc": 0.7922040173176067,
+        "average_precision": 0.8049677809297915,
+        "brier": 0.1872903037746295,
+        "log_loss": 0.5538833168754317
+      }
+    },
+    "B1_HGB": {
+      "raw": {
+        "auc": 0.5868915712799168,
+        "average_precision": 0.5677535073622804,
+        "brier": 0.25867586342954946,
+        "log_loss": 0.720194052094826
+      },
+      "calibrated": {
+        "auc": 0.5868915712799168,
+        "average_precision": 0.5677535073622804,
+        "brier": 0.2534040963542566,
+        "log_loss": 0.7047706452606126
+      },
+      "selected": {
+        "k": 0,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 50,
+        "l2_regularization": 10.0,
+        "selection_auc": 0.6956481363074468,
+        "eligible": true
+      },
+      "calibration_partition_raw_metrics": {
+        "auc": 0.6986721128398122,
+        "average_precision": 0.6876527657356185,
+        "brier": 0.22088843075984235,
+        "log_loss": 0.6326603969709178
+      }
+    },
+    "PCA_HGB": {
+      "raw": {
+        "auc": 0.5679587929240375,
+        "average_precision": 0.5591644471058197,
+        "brier": 0.2720001867236704,
+        "log_loss": 0.7551554741613511
+      },
+      "calibrated": {
+        "auc": 0.5679587929240375,
+        "average_precision": 0.5591644471058197,
+        "brier": 0.2764574735348378,
+        "log_loss": 0.7701747839582341
+      },
+      "selected": {
+        "k": 128,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20,
+        "l2_regularization": 10.0,
+        "selection_auc": 0.7724733127508114,
+        "eligible": true
+      },
+      "calibration_partition_raw_metrics": {
+        "auc": 0.7739562776324445,
+        "average_precision": 0.7757189178397438,
+        "brier": 0.19306520652982911,
+        "log_loss": 0.5661889992760973
+      }
+    }
+  },
+  "uncertainty": {
+    "replicates": 10000,
+    "seed": 20261016,
+    "arm_auc_ci95": {
+      "B1_LOGIT": [
+        0.516795004154514,
+        0.5567467963418883
+      ],
+      "FULL_LOGIT": [
+        0.5378037291569944,
+        0.5750600221268348
+      ],
+      "PCA_LOGIT": [
+        0.5196389453252775,
+        0.5581656040063362
+      ],
+      "B1_HGB": [
+        0.567841531392582,
+        0.6058607258177846
+      ],
+      "PCA_HGB": [
+        0.5493470900333203,
+        0.5867619312386276
+      ]
+    },
+    "contrasts": [
+      {
+        "candidate": "FULL_LOGIT",
+        "baseline": "B1_LOGIT",
+        "delta_auc": 0.019644953173777346,
+        "ci95": [
+          0.00269726056986275,
+          0.03673072051849837
+        ],
+        "bonferroni_ci_98_333333": [
+          -0.000495261171282954,
+          0.04080911131768634
+        ]
+      },
+      {
+        "candidate": "PCA_LOGIT",
+        "baseline": "B1_LOGIT",
+        "delta_auc": 0.0022668054110303038,
+        "ci95": [
+          -0.011115556105773552,
+          0.015713226744318756
+        ],
+        "bonferroni_ci_98_333333": [
+          -0.013852807208352663,
+          0.01832616537204979
+        ]
+      },
+      {
+        "candidate": "PCA_HGB",
+        "baseline": "B1_HGB",
+        "delta_auc": -0.018932778355879254,
+        "ci95": [
+          -0.03463569572977291,
+          -0.0035687950751721233
+        ],
+        "bonferroni_ci_98_333333": [
+          -0.03820331832834671,
+          -8.245990714588096e-05
+        ]
+      }
+    ]
+  },
+  "elapsed_seconds": 549.4719588756561,
+  "seal_sha256": "2481fde5cad52e826aa0a8a5767858a655830b7eca3a6a37725feae49176639a",
+  "input_preflight_sha256": "7cf0312ca3286ae5edbccc2f03f805c348ae7c56cc85bf2e23b51f9f8dc3d19b"
+}

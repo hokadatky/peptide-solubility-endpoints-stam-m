@@ -1,0 +1,33 @@
+{
+  "started_unix": 1788883551.119405,
+  "input_hashes": {
+    "${WORKSPACE}/data/solubility/soluprot_train_partitions.csv": "28a63f9d40c47bda0ff936830eacbf818572b78f67f23417ad01e3bee528ad0e",
+    "${WORKSPACE}/data/solubility/solubility_transparent_features_development.csv": "74ee352dfeff9be1b2500261ab6d60fb2aed8870fb280b5b300e8f4ebd4712b9",
+    "${WORKSPACE}/data/solubility/solubility_transparent_features.json": "be7638fbc9bdf421661710ef8319a2be58473f4de4bfe351edbd9adda3279f50",
+    "${WORKSPACE}/data/solubility/embeddings/soluprot_prott5.npy": "be0a480acaf19f2deada752e5befb7d568f90b73f089a2ec6b74aa75ce7cdf45",
+    "${WORKSPACE}/data/solubility/embeddings/soluprot_embedding_index.csv": "0988ba5f71b8da7c9af65d5d05baa0616538a9629ac88c80e9f036430c22bf94"
+  },
+  "source_hashes": {
+    "src/context_features.py": "a3124c895ce3352c6bc7a19bce2b3df63491021a4940bd44d970368e06d9f3fc",
+    "src/increment.py": "8ef062d2e43d8821a8926b1ee409516b03efedc6222d2107dd0ce6faa9c52d20",
+    "src/teacher_reference.py": "ce6506c4142de04806c3cd8e6e25000c8e91a569d4cd8621cb5ad62643f07802",
+    "src/diagnostic.py": "7959ab0f96431a05e247c0b79a8cf38659a9f25effcd3a0d92241f03f094214c",
+    "src/nested.py": "60cbe9ae8928b131b6bdad65bb34199926a17f41311d5ff28bea39b226eaa1ac",
+    "vendor/sequence_features.py": "835ce41629e31fb838917a99243456900baa46af8f77c815c07c6a5051377b3a",
+    "vendor/io_contracts.py": "b1731a58d17cc008db2ac24750f96e5fcc38f04f09ee0904f38ed9f717307b66",
+    "vendor/descriptors.py": "75e778e627a53026e4d44a82e1d9ad0147af8e50d608b0e0b8712aa4ecb8038a",
+    "vendor/tripeplite.py": "ea3524b192646ff87c9c419f2e7a34958fd1ff0ce2588c962c0a86c4b8a7f867",
+    "protocol/parent_config.json": "f2cd4c0d20fde5220903908039f42f401d4a8f35330b267a13207af5b4209a33",
+    "protocol/SPEC.md": "1d45659d8f480d50598c3148c8bcd0891b741fc7a9b7a0636f614ae0a167f1db"
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "sklearn": "1.2.0",
+    "xgboost": "3.1.3"
+  },
+  "feature_dimensions": {
+    "b1": 425,
+    "context": 2498
+  },
+  "scope": "exploratory; no folds0/1 or external labels"
+}

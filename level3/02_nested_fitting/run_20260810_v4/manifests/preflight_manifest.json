@@ -1,0 +1,52 @@
+{
+  "analysis_scope": "retrospective_data_informed",
+  "author_decisions": {
+    "author_decisions_sha256": "c5f9399748500aaf5209970ccbf913edda1dd7f339c6d9aaa499faff8b13ef6a",
+    "governance": "retrospective_reanalysis_of_recombinant_expression_worked_example",
+    "manuscript_integration": "forbidden_until_author_review",
+    "margins": {
+      "auc_gain_delta = 0.02": 0.02,
+      "log10_rmse_gain_delta = 0.10": 0.1,
+      "spearman_gain_delta = 0.05": 0.05
+    },
+    "primary_contract": {
+      "encoder": "ProtT5",
+      "learner": "L2 logistic regression",
+      "sensitivity_learner": "fixed HistGradientBoosting"
+    },
+    "status": "approved"
+  },
+  "code_hash": "37a743ee5d1cb6aa857f69fb36bf2014319c45d18db2cba1d61427b74d2f02cc",
+  "config_sha256": "f5474cb07f86cb6a7dc8d789a8a8cb2a062df740a2901314ddcb62a2423dfe60",
+  "contains_record_ids": false,
+  "contains_row_level_data": false,
+  "contains_sequences": false,
+  "environment": {
+    "numpy": "1.26.4",
+    "packages": {
+      "PyYAML": "6.0.2",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "pyarrow": "14.0.2",
+      "scikit-learn": "1.2.0",
+      "scipy": "1.15.3"
+    },
+    "pandas": "2.3.3",
+    "platform": "macOS-15.4-arm64-arm-64bit",
+    "python": "3.10.17 | packaged by conda-forge | (main, Apr 10 2025, 22:23:34) [Clang 18.1.8 ]"
+  },
+  "freeze_path": "${WORKSPACE}/paper/peptide_solubility_review/analysis_addon/protocol/RETROSPECTIVE_ANALYSIS_FREEZE_20260810_V4.md",
+  "freeze_sha256": "b675678ae6d2b21917591001d41ec6e87a8f64ef0f1ff9ef1df37b16520a6eb5",
+  "input_hashes": {
+    "development_features": "74ee352dfeff9be1b2500261ab6d60fb2aed8870fb280b5b300e8f4ebd4712b9",
+    "embedding_index": "0988ba5f71b8da7c9af65d5d05baa0616538a9629ac88c80e9f036430c22bf94",
+    "external_clustered": "6053e4d90e26ab2a13dd7e6f4c99da66e269a4a2711e5645ee13b70594e3b469",
+    "external_features": "a906652cd246931dfbf1c75e4b30cf8fc59586ebee7fe77adae3bf114e0c698c",
+    "feature_manifest": "be7638fbc9bdf421661710ef8319a2be58473f4de4bfe351edbd9adda3279f50",
+    "prott5_array": "be0a480acaf19f2deada752e5befb7d568f90b73f089a2ec6b74aa75ce7cdf45",
+    "train_partitions": "28a63f9d40c47bda0ff936830eacbf818572b78f67f23417ad01e3bee528ad0e"
+  },
+  "manuscript_integration_authorized": false,
+  "run_id": "addon_20260810_v4",
+  "status": "phase_0_preflight_passed"
+}

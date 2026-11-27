@@ -1,0 +1,114 @@
+run_id: addon_20260810_v4
+analysis_scope: retrospective_data_informed
+global_seed: 20260809
+
+paths:
+  project_root: ${WORKSPACE}
+  paper_root: ${WORKSPACE}/paper/peptide_solubility_review
+  scope_root: ${WORKSPACE}/paper/general_peptide_solubility_scoping
+  data_root: ${WORKSPACE}/data/solubility
+  run_root: ${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4
+
+input_hashes:
+  train_partitions: 28a63f9d40c47bda0ff936830eacbf818572b78f67f23417ad01e3bee528ad0e
+  external_clustered: 6053e4d90e26ab2a13dd7e6f4c99da66e269a4a2711e5645ee13b70594e3b469
+  development_features: 74ee352dfeff9be1b2500261ab6d60fb2aed8870fb280b5b300e8f4ebd4712b9
+  external_features: a906652cd246931dfbf1c75e4b30cf8fc59586ebee7fe77adae3bf114e0c698c
+  feature_manifest: be7638fbc9bdf421661710ef8319a2be58473f4de4bfe351edbd9adda3279f50
+  embedding_index: 0988ba5f71b8da7c9af65d5d05baa0616538a9629ac88c80e9f036430c22bf94
+  prott5_array: be0a480acaf19f2deada752e5befb7d568f90b73f089a2ec6b74aa75ce7cdf45
+
+statistics:
+  bootstrap_unit: cluster
+  bootstrap_replicates_final: 10000
+  bootstrap_replicates_smoke: 20
+  bootstrap_seed: 20260809
+  confidence_levels: [0.90, 0.95]
+  auc_gain_margin: 0.02
+  log10_rmse_gain_margin: 0.10
+  spearman_gain_margin: 0.05
+  mde_target_power: 0.80
+  mde_alpha_two_sided: 0.05
+
+soluprot:
+  endpoint: recombinant_soluble_expression_binary
+  development_rows_expected: 11436
+  development_groups_expected_30pct: 10715
+  external_rows_expected: 3100
+  external_groups_expected: 2723
+  id_column: record_id
+  label_column: label
+  primary_group_column: cluster_id
+  external_group_column: external_cluster_id
+  primary_outer_fold_column: development_fold
+  primary_outer_folds: 7
+  inner_folds: 5
+  fold_stability_seeds: [20260809, 20260810, 20260811, 20260812, 20260813]
+  label_permutation_replicates: 50
+  label_permutation_seed: 20261809
+  threshold_ladder: [0.25, 0.30, 0.40, 0.50]
+  primary_threshold: 0.30
+  primary_reference: B1_ORDER_LOGIT
+  primary_candidate: B1_ORDER_PLUS_PROTT5_PLS_LOGIT
+  primary_metric: roc_auc
+  transparent_manifest_group: primary_aac_plus_physicochemical
+  ordered_dimer_alphabet: ACDEFGHIKLMNPQRSTVWY
+  ordered_dimer_dimension: 400
+  logistic_c_grid: [0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000]
+  pls_k_grid: [1, 2, 3, 5, 8, 16]
+  prott5_dimension: 1024
+  calibration: platt_on_reserved_development_partition
+
+historical_bridge:
+  outer_folds: 5
+  learner: fixed_hist_gradient_boosting
+  pls_k: 3
+  random_state: 42
+  max_iter: 300
+  learning_rate: 0.06
+  max_depth: 3
+
+shift:
+  similarity_audit: ${WORKSPACE}/data/solubility/soluprot_external_train_similarity_audit_cov25_v4.csv
+  pooled_recluster_coverage: 0.80
+  pooled_recluster_cluster_mode: 1
+  pooled_recluster_sensitivity: 7.5
+  source_classifier_folds: 5
+
+modified:
+  workbook: ${WORKSPACE}/paper/general_peptide_solubility_scoping/raw/StapledPeptides_Supplementary_Dataset_1.xlsx
+  sheet: Supp Data 1
+  target_column_number: 36
+  complete_linkage_thresholds: [0.05, 0.10, 0.15, 0.20]
+  feasibility_min_families: 10
+  feasibility_max_family_fraction: 0.20
+  feasibility_min_test_rows_per_fold: 10
+
+execution:
+  recompute_affected_arms:
+    - B0_TRANSPARENT_LOGIT
+    - B1_ORDER_LOGIT
+    - B0_PLUS_PROTT5_PLS_LOGIT
+    - PROTT5_PLS_ONLY_LOGIT
+    - B1_ORDER_PLUS_PROTT5_PLS_LOGIT
+  deferred_arm: B1_PLUS_PROTT5_RAW_LOGIT
+  raw_fusion_defer_reason: high-dimensional raw fusion exceeded four hours in v2; frozen compute-based deferment, not evidence of null effect
+  holm_family_size: 4
+  deferred_arm_p_value_for_multiplicity: 1.0
+  split_contract_version: v4-sgkf-1.2.0-seeded-token-shuffle-off-gates-v2
+  split_row_positive_negative_tolerance: 0.05
+  split_prevalence_tolerance: 0.02
+  split_min_class_bearing_groups_per_fold: 20
+  logistic_solver: lbfgs
+  logistic_tol: 0.0001
+  logistic_max_iter: 20000
+  inner_nonconverged_candidate: ineligible
+  outer_nonconvergence: hard_stop
+  external_order: [fit, model_selection, refit_fit_plus_model_selection, calibration, retrospective_external_once]
+
+release:
+  allow_row_level_tracked: false
+  allow_sequences_tracked: false
+  allow_record_ids_tracked: false
+  manuscript_edit_allowed: false
+  overwrite_existing_audit_allowed: false

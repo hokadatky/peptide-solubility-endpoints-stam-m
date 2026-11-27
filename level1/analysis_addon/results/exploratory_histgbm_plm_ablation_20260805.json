@@ -1,0 +1,25 @@
+{
+  "schema": "exploratory_histgbm_plm_ablation_v1",
+  "status": "historical_exploratory_not_the_S7_logistic_worked_example",
+  "pipeline": "HistGBM; SoluProt development; cluster-grouped 5-fold CV (homology-controlled)",
+  "endpoint": "recombinant soluble-expression status in E. coli; not direct aqueous solubility",
+  "comparability": "NOT comparable to the logistic ROC AUCs in Figure 4(a); different model family and fitting pipeline. Provided only to show the representation-stacking trend within this exploratory ablation.",
+  "provenance": [
+    "general_peptide_solubility_scoping/analysis_plm_ablation/soluprot_roc_fig4a.json",
+    "general_peptide_solubility_scoping/analysis_plm_ablation/metaplm_pls_nested.json"
+  ],
+  "no_new_computation": true,
+  "arms": [
+    {"key": "BASE", "label": "No pLM (BASE)", "auc": 0.6857},
+    {"key": "ESM2", "label": "ESM-2", "auc": 0.7551},
+    {"key": "PROTT5", "label": "ProtT5", "auc": 0.7826},
+    {"key": "META", "label": "ProtT5 + ESM-2", "auc": 0.794}
+  ],
+  "meta_gain": {
+    "from": "ProtT5",
+    "to": "ProtT5 + ESM-2",
+    "delta": 0.0114,
+    "ci95": [0.0062, 0.0166],
+    "significant": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "scope": "two existing ESM-2 shards recomputed on CPU float32; aggregate differences only",
+  "checkpoint": "facebook/esm2_t33_650M_UR50D",
+  "revision": "08e4846e537177426273712802403f7ba8261b6c",
+  "historical_per_shard_device_provenance": "not recorded",
+  "thresholds": {
+    "minimum_cosine": 0.99999,
+    "maximum_absolute_component_difference": 0.02,
+    "maximum_p99_absolute_component_difference": 0.005
+  },
+  "shards": [
+    {
+      "shard_index": 0,
+      "batch_rows": 4,
+      "residue_counts": [900, 900, 900, 900],
+      "minimum_cosine": 0.9999999999999998,
+      "maximum_absolute_component_difference": 0.0,
+      "p99_absolute_component_difference": 0.0,
+      "median_absolute_component_difference": 0.0,
+      "elapsed_seconds": 5.35137325,
+      "status": "PASS"
+    },
+    {
+      "shard_index": 776,
+      "batch_rows": 9,
+      "residue_counts": [383, 383, 383, 383, 383, 383, 383, 383, 383],
+      "minimum_cosine": 0.9999999999999999,
+      "maximum_absolute_component_difference": 0.0,
+      "p99_absolute_component_difference": 0.0,
+      "median_absolute_component_difference": 0.0,
+      "elapsed_seconds": 5.282795416999999,
+      "status": "PASS"
+    }
+  ],
+  "privacy": {
+    "contains_embeddings": false,
+    "contains_labels": false,
+    "contains_record_ids": false,
+    "contains_sequences": false
+  }
+}

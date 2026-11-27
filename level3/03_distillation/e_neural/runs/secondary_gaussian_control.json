@@ -1,0 +1,15 @@
+{
+  "scope": "Exploratory secondary comparison promised in neural SPEC; no new fitting",
+  "estimate": 0.000767361136530087,
+  "ci95": [
+    -0.005869041920868992,
+    0.0072850071394791405
+  ],
+  "repeats": 10000,
+  "seed": 20260909,
+  "unit": "30%-identity cluster",
+  "source_sha256": {
+    "stam_neural_increment_distillation_20260909/runs/nested/private_predictions.npz": "922bec674c5a7c290f587cdc37541190f47f466aacdfbc98f5aefbb183b75246",
+    "stam_nonlinear_increment_distillation_20260909/runs/nested/private_predictions.npz": "7f01fd9d1036b235657de02ca200511b3dd2e8309449c23453256bc5cd190a8e"
+  }
+}

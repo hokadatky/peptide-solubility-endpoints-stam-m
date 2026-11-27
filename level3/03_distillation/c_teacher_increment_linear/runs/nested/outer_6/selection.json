@@ -1,0 +1,400 @@
+{
+  "family": "ridge",
+  "feature": "context",
+  "distilled": {
+    "param": 1000,
+    "gamma": 0.5,
+    "inner_mean_auc": 0.7071053493977775
+  },
+  "hard": {
+    "param": 1000,
+    "gamma": 0,
+    "inner_mean_auc": 0.7006264755793135
+  },
+  "inner_results": [
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 10,
+      "gamma": 0,
+      "distilled": 0.6974245277288464,
+      "hard": 0.6974245277288464
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 10,
+      "gamma": 0.25,
+      "distilled": 0.7049899775253599,
+      "hard": 0.688307112919881
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 10,
+      "gamma": 0.5,
+      "distilled": 0.7018951588410375,
+      "hard": 0.6611963190184049
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 10,
+      "gamma": 1,
+      "distilled": 0.6740334386199355,
+      "hard": 0.6114818076899715
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 100,
+      "gamma": 0,
+      "distilled": 0.6974245277288464,
+      "hard": 0.6974245277288464
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 100,
+      "gamma": 0.25,
+      "distilled": 0.7040833991374598,
+      "hard": 0.6914695073801858
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 100,
+      "gamma": 0.5,
+      "distilled": 0.7023355403024966,
+      "hard": 0.6700882281479681
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 100,
+      "gamma": 1,
+      "distilled": 0.6802944481564721,
+      "hard": 0.6257425742574257
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.6974245277288464,
+      "hard": 0.6974245277288464
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.7032049140496872,
+      "hard": 0.6980623215695801
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.7051479074287798,
+      "hard": 0.6898636336026241
+    },
+    {
+      "family": "ridge",
+      "inner": 2,
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.698844378302861,
+      "hard": 0.6618250015185567
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 10,
+      "gamma": 0,
+      "distilled": 0.6936940489229646,
+      "hard": 0.6936940489229646
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 10,
+      "gamma": 0.25,
+      "distilled": 0.6998386272362176,
+      "hard": 0.6846746987951806
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 10,
+      "gamma": 0.5,
+      "distilled": 0.6972464403066813,
+      "hard": 0.6541380065717416
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 10,
+      "gamma": 1,
+      "distilled": 0.6733158086893026,
+      "hard": 0.602925155166119
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 100,
+      "gamma": 0,
+      "distilled": 0.6936940489229646,
+      "hard": 0.6936940489229646
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 100,
+      "gamma": 0.25,
+      "distilled": 0.6995523913837167,
+      "hard": 0.6867601314348303
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 100,
+      "gamma": 0.5,
+      "distilled": 0.6988265790434465,
+      "hard": 0.6604790069368383
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 100,
+      "gamma": 1,
+      "distilled": 0.6801891201168309,
+      "hard": 0.612898868200073
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.6936940489229646,
+      "hard": 0.6936940489229646
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.6986900328587076,
+      "hard": 0.6937086527929902
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.7005111354508945,
+      "hard": 0.6831004016064257
+    },
+    {
+      "family": "ridge",
+      "inner": 3,
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.6949675063891931,
+      "hard": 0.6485826944140196
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 10,
+      "gamma": 0,
+      "distilled": 0.7018241003255179,
+      "hard": 0.7018241003255179
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 10,
+      "gamma": 0.25,
+      "distilled": 0.7053762956962633,
+      "hard": 0.6942314327288002
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 10,
+      "gamma": 0.5,
+      "distilled": 0.6989364415042827,
+      "hard": 0.6673297031336723
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 10,
+      "gamma": 1,
+      "distilled": 0.6687630319667581,
+      "hard": 0.6176612213671752
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 100,
+      "gamma": 0,
+      "distilled": 0.7018241003255179,
+      "hard": 0.7018241003255179
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 100,
+      "gamma": 0.25,
+      "distilled": 0.7051130312167169,
+      "hard": 0.6963075469150802
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 100,
+      "gamma": 0.5,
+      "distilled": 0.7004575251638839,
+      "hard": 0.6735722964763062
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 100,
+      "gamma": 1,
+      "distilled": 0.6744655956077583,
+      "hard": 0.6271889953947467
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.7018241003255179,
+      "hard": 0.7018241003255179
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.7050897799378967,
+      "hard": 0.6999602478136298
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.7048032641795299,
+      "hard": 0.6901384576151688
+    },
+    {
+      "family": "ridge",
+      "inner": 4,
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.6937596567811231,
+      "hard": 0.656831375725665
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 10,
+      "gamma": 0,
+      "distilled": 0.7095632253399244,
+      "hard": 0.7095632253399244
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 10,
+      "gamma": 0.25,
+      "distilled": 0.715754175705632,
+      "hard": 0.7019141861374871
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 10,
+      "gamma": 0.5,
+      "distilled": 0.7102463340327418,
+      "hard": 0.6720300330737223
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 10,
+      "gamma": 1,
+      "distilled": 0.6782995187121401,
+      "hard": 0.6157024609694512
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 100,
+      "gamma": 0,
+      "distilled": 0.7095632253399244,
+      "hard": 0.7095632253399244
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 100,
+      "gamma": 0.25,
+      "distilled": 0.7159482911910096,
+      "hard": 0.704103542088979
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 100,
+      "gamma": 0.5,
+      "distilled": 0.7133418092155956,
+      "hard": 0.6788463020259137
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 100,
+      "gamma": 1,
+      "distilled": 0.6870917647616677,
+      "hard": 0.6251541069502236
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.7095632253399244,
+      "hard": 0.7095632253399244
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.7159142098462487,
+      "hard": 0.7107079139846129
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.7179590905319061,
+      "hard": 0.7011769918323316
+    },
+    {
+      "family": "ridge",
+      "inner": 5,
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.7107249546569935,
+      "hard": 0.6654649288144434
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "supplementary_data_basename": "CamSolPTM_Supplementary_Data_1.xlsx",
+  "supplementary_data_sha256": "400232664ce3d67bd349659a04d5f319fadd7ba50e76ca278f691560c36d97b5",
+  "source_data_basename": "CamSolPTM_Source_Data.xlsx",
+  "source_data_sha256": "8ae367129d0e6aa9ceedb7afbd4a2b38469b8f121aae4e8b4ac2de91582b4b1d",
+  "sequence_table_rows": 37,
+  "unique_sequence_strings": 37,
+  "canonical_one_letter_sequence_strings": 1,
+  "group_row_ranges_verified": true,
+  "expected_metadata_rows": [
+    1,
+    3,
+    22,
+    24,
+    37,
+    39
+  ],
+  "Figure3_groups": {
+    "PYY_PEG_precipitant_midpoint": {
+      "figure_rows": 15,
+      "rows_with_CamSol_prediction": 15,
+      "rows_with_experimental_endpoint": 15
+    },
+    "18A_ammonium_sulfate_midpoint": {
+      "figure_rows": 9,
+      "rows_with_CamSol_prediction": 9,
+      "rows_with_experimental_endpoint": 9
+    },
+    "GLP1_ultracentrifugation_supernatant": {
+      "figure_rows": 10,
+      "rows_with_CamSol_prediction": 10,
+      "rows_with_experimental_endpoint": 10
+    }
+  },
+  "total_rows_with_experimental_endpoint": 34,
+  "endpoint_interpretation": "The three scaffolds use two precipitant-midpoint assays and one ultracentrifugation-supernatant assay. Their numerical outcomes must be analysed by scaffold/assay and are not a single pooled logS target.",
+  "representation_interpretation": "Most variants contain non-natural residues whose chemical identity is not represented by canonical ProtT5 or ESM-2 residue tokens.",
+  "limitations": [
+    "Only three related peptide scaffolds were experimentally studied.",
+    "The 40,000 and 50,000 scale values in the paper are computational predictions, not experimental solubility records.",
+    "The audit reports aggregate counts and does not certify chemical-entity canonicalization."
+  ]
+}

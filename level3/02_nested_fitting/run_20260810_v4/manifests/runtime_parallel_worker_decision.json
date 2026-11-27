@@ -1,0 +1,57 @@
+{
+  "schema": "v4_runtime_operational_decision_v1",
+  "run_id": "addon_20260810_v4",
+  "recorded_at": "2026-08-10T21:49:14+09:00",
+  "scope": "independent_outer_fold_wall_time_parallelism_only",
+  "scientific_contract_changed": false,
+  "worker": {
+    "path": "private_tools/v4_parallel_fold_worker.py",
+    "sha256": "b6ba5eb1240ff643dbc02a37843bcbb2c5720fdd3806a5d36203beb47b98829e",
+    "implementation_rule": "imports frozen split, selection, fit, prediction, contract, integrity, and atomic checkpoint functions; applies the canonical loop body to one task"
+  },
+  "scheduler": {
+    "path": "private_tools/v4_parallel_scheduler.py",
+    "sha256": "6d7184350b5ee77d437a814a15715a8771cf760df36d535fad12d3551188e84d",
+    "dry_run": {
+      "stability_candidate_tasks": 35,
+      "stability_reference_tasks": 35,
+      "unique_tasks": 70,
+      "candidate_workers": 2,
+      "reference_workers": 1,
+      "status": "passed"
+    }
+  },
+  "dry_run": {
+    "arm": "B0_TRANSPARENT_LOGIT",
+    "outer_fold": 6,
+    "production_checkpoint_sha256": "81501b8bbb0ac1873178fd70cbbfaf281d50e8cec4b15542698f77416b4c23e4",
+    "dry_checkpoint_sha256": "7fe0a85ad6a06677baf258d097a8cff56624009a7d55d8f0c3be9280ebb4fea4",
+    "keys_equal": true,
+    "contract_equal": true,
+    "test_indices_equal": true,
+    "max_abs_score_difference": 0.0,
+    "fold_info_equal_after_removing_fit_seconds": true,
+    "outer_diagnostics_equal": true,
+    "selected_hyperparameter_equal": true,
+    "note": "The NPZ hashes differ only because fit_seconds is intentionally measured at runtime and is bound into the artifact digest."
+  },
+  "execution": {
+    "max_concurrent_workers": 4,
+    "stability_concurrency": "two candidate workers plus one reference worker",
+    "openblas_threads_per_worker": 4,
+    "distinct_checkpoint_paths_required": true,
+    "canonical_runner_must_reload_and_validate_every_worker_artifact": true,
+    "first_attempt_disposition": "A truncated process-table capture incorrectly suggested that the four original workers had disappeared. They remained alive. Four duplicate retries were briefly started, detected by a full process-table audit, and terminated before any checkpoint was written. The more advanced original workers were retained; no duplicate artifact was accepted.",
+    "wake_lock_policy": "A separate six-hour caffeinate assertion was started after the process-table audit. Completed artifacts only are eligible for canonical validation."
+  },
+  "unchanged": [
+    "data",
+    "outer and inner assignments",
+    "model arms",
+    "C and PLS-k grids",
+    "solver, tolerance, and iteration caps",
+    "selection and tie-break rule",
+    "convergence gates",
+    "checkpoint contract and integrity validation"
+  ]
+}

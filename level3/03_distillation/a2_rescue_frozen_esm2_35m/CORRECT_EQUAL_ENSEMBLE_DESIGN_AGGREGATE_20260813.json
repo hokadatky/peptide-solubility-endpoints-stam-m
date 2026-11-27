@@ -1,0 +1,63 @@
+{
+  "confirmation_fold_loaded": false,
+  "endpoint": "recombinant soluble-expression status in E. coli",
+  "ensemble_rule": "unweighted arithmetic mean of two probabilities; no fitted ensemble weights",
+  "explicit_exclusion": "not direct aqueous solubility of a purified peptide",
+  "exploratory_only": true,
+  "extraction": {
+    "device": "mps",
+    "dimension": 480,
+    "model": "facebook/esm2_t12_35M_UR50D",
+    "pooling": "residue-only arithmetic mean; special tokens excluded",
+    "row_count": 9819,
+    "sequence_policy": "full through 1022 residues; first/last concatenation above 1022"
+  },
+  "frozen_head": {
+    "feature_count": 905,
+    "logistic_c": 0.1
+  },
+  "gates": {
+    "distillation_gain_pass": true,
+    "distilled_minus_hard_ensemble_auc": 0.008892197519136169,
+    "overall_pass": true,
+    "required_auc_for_80pct_retention": 0.7506065145508687,
+    "retention_pass": true,
+    "teacher_gain_retention": 0.8994143277808557
+  },
+  "metrics": {
+    "B1_OFFSET": {
+      "average_precision": 0.7097790731745979,
+      "brier": 0.22284167309660938,
+      "log_loss": 0.643836425488212,
+      "roc_auc": 0.6945642046803924
+    },
+    "CORRECT_EQUAL_ENSEMBLE_DISTILLED": {
+      "average_precision": 0.76383387069405,
+      "brier": 0.20120418434691256,
+      "log_loss": 0.5880323775845542,
+      "roc_auc": 0.7575707752546934
+    },
+    "CORRECT_EQUAL_ENSEMBLE_HARD_CONTROL": {
+      "average_precision": 0.7571431656837231,
+      "brier": 0.20370477179196048,
+      "log_loss": 0.5923679554435965,
+      "roc_auc": 0.7486785777355572
+    },
+    "CORRECT_FROZEN_ESM35_B1": {
+      "average_precision": 0.7467741636452839,
+      "brier": 0.20987280871375857,
+      "log_loss": 0.6135925152740591,
+      "roc_auc": 0.7442271506604066
+    },
+    "PROTT5_TEACHER": {
+      "average_precision": 0.7701094834109876,
+      "brier": 0.20312280301957794,
+      "log_loss": 0.6094132319844044,
+      "roc_auc": 0.7646170920184877
+    }
+  },
+  "private_prediction_path": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_distillation_rescue_run_20260813_v2/correct_equal_ensemble_design_predictions.parquet",
+  "runtime_seconds": 321.0348300933838,
+  "schema": "correct-frozen-esm-equal-ensemble-design-v1",
+  "status": "DESIGN_PASS"
+}

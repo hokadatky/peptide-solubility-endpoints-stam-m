@@ -1,0 +1,145 @@
+{
+  "auc_margin_to_80pct_target": {
+    "bootstrap_probability_nonnegative": 0.8505,
+    "ci95": [
+      -0.0060075590782337675,
+      0.020209778295432943
+    ],
+    "point": 0.006964260703824721
+  },
+  "bootstrap_unit": "30pct_identity_cluster",
+  "claim_ceiling": "Correct-pooling design-fold feasibility. Candidate must be frozen and tested on a genuinely unused cohort before manuscript or app promotion.",
+  "cluster_swap_auc_test": {
+    "n_replicates": 999,
+    "null_ci95": [
+      -0.003533738894267857,
+      0.0034637857225500663
+    ],
+    "null_median": -3.805939701739813e-05,
+    "observed_gain": 0.008892197519136169,
+    "p_value_two_sided": 0.001,
+    "seed": 20260813,
+    "unit": "cluster_swap"
+  },
+  "confirmation_fold_loaded": false,
+  "distilled_ensemble_minus_b1_auc": {
+    "bootstrap_mean": 0.06306511497550688,
+    "bootstrap_sd": 0.007256928649549103,
+    "bootstrap_seed": 20260813,
+    "bootstrap_unit": "cluster",
+    "ci90": [
+      0.051139218379053636,
+      0.07505964220104822
+    ],
+    "ci95": [
+      0.04876345225169956,
+      0.07754529290760595
+    ],
+    "invalid_fraction": 0.0,
+    "metric": "roc_auc",
+    "n_groups": 1531,
+    "n_replicates_invalid": 0,
+    "n_replicates_requested": 10000,
+    "n_replicates_valid": 10000,
+    "point_gain": 0.06300657057430104
+  },
+  "distilled_minus_identical_hard_ensemble": {
+    "auprc": {
+      "bootstrap_mean": 0.006699822857752361,
+      "bootstrap_sd": 0.0016771966868364384,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.003972083593014003,
+        0.009464909693342974
+      ],
+      "ci95": [
+        0.0034878356963815665,
+        0.010013314280858037
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "auprc",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.0066907050103268695
+    },
+    "brier": {
+      "bootstrap_mean": 0.0024996526373168857,
+      "bootstrap_sd": 0.0007384214854142513,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.0012855230113667834,
+        0.0036987089935591254
+      ],
+      "ci95": [
+        0.0010408859902219403,
+        0.003926182777518969
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "brier",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.0025005874450479137
+    },
+    "log_loss": {
+      "bootstrap_mean": 0.004342056915004605,
+      "bootstrap_sd": 0.0019967143970380076,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.0009864518036505011,
+        0.007553539091465892
+      ],
+      "ci95": [
+        0.0003619430931244256,
+        0.008117065815959964
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "log_loss",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.004335577859042372
+    },
+    "roc_auc": {
+      "bootstrap_mean": 0.00889823335230724,
+      "bootstrap_sd": 0.0015962683354534479,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.00628547881943955,
+        0.011515340824681823
+      ],
+      "ci95": [
+        0.005794432834438329,
+        0.01201909861497721
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "roc_auc",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.008892197519136169
+    }
+  },
+  "replicates": 10000,
+  "schema": "correct-pooling-equal-ensemble-bootstrap-v1",
+  "seed": 20260813,
+  "status": "EXPLORATORY_DESIGN_PASS_NOT_PROMOTED",
+  "teacher_gain_retention": {
+    "bootstrap_probability_at_least_0_8": 0.8505,
+    "ci95": [
+      0.7236721335073533,
+      1.1446215670263487
+    ],
+    "point": 0.8994143277808557,
+    "valid_replicates": 10000
+  }
+}

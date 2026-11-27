@@ -1,0 +1,15 @@
+{
+  "all_arms_fitted_before_external_evaluation": true,
+  "at_utc": "2026-10-16T10:51:50.975483+00:00",
+  "external_outcomes_used_for_current_hyperparameter_selection": false,
+  "freeze_sha256": "e9cd6e8ee6742460063121b39c12b3d5da25bec127b2e72744b4ac7fdba69c8e",
+  "models": {
+    "B1_HGB": "aa2cdfc57f1aefa7f0bd7ad6a1b79c1128e00dddfb594687db3206c0b1294bcd",
+    "B1_LOGIT": "13af25c7235d9c38413578fe39b1de268346a1a07e514022ca2739500b61ead3",
+    "FULL_LOGIT": "a6e31f8301093e0707e46d7cc37e1c45baf224be32645ac6d45222ab92af7535",
+    "PCA_HGB": "a35c7be8b019b63ac481cbf17fafd2b4644aff0ffd1881287c1a4133620c78c0",
+    "PCA_LOGIT": "0ede5fe11e16e861eb0f7fb8760ef6cf816ccee857b2a81f30d7753af5b85d12"
+  },
+  "prediction_archive_sha256": "db4561c526a4db5d30975021b53a3915c9a1d0e596b7bab859d7b9182cf42b2c",
+  "previous_external_outcomes_seen": true
+}

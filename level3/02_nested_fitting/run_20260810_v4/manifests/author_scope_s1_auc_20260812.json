@@ -1,0 +1,14 @@
+{
+  "date_jst": "2026-08-12",
+  "decision": "S1_MINIMAL_INTERNAL_AUC_AUTHOR_REVIEW",
+  "author_request": "Include an AUC figure that visibly quantifies the PLM increment.",
+  "authorized_stage": "canonical internal-primary aggregation from existing checkpoints only",
+  "authorized_manuscript_target": "separate S1 author-review candidate only",
+  "model_refit_authorized": false,
+  "external_authorized": false,
+  "shift_authorized": false,
+  "modified_peptide_authorized": false,
+  "direct_aqueous_claim_authorized": false,
+  "sota_or_world_best_claim_authorized": false,
+  "s0_fallback_must_remain_immutable": true
+}

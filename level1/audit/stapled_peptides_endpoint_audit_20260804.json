@@ -1,0 +1,83 @@
+{
+  "source_basename": "StapledPeptides_Supplementary_Dataset_1.xlsx",
+  "source_sha256": "cc814db9acd610018f8cf4d6b030a95fb5a3659aa49bb3644c0883700a637553",
+  "sheet": "Supp Data 1",
+  "endpoint": "kinetic solubility after dilution from DMSO into PBS at pH 7, filtered and quantified by UPLC/DAD",
+  "reported_unit": "micromolar",
+  "section_row_ranges_verified": true,
+  "expected_metadata_rows": [
+    1,
+    2,
+    3,
+    368,
+    369,
+    370,
+    414,
+    415,
+    416
+  ],
+  "sections": {
+    "ATSP_analogues": {
+      "included_rows": 363,
+      "rows_with_quantitative_or_bounded_solubility": 197,
+      "solubility_value_types": {
+        "exact_numeric": 197,
+        "missing": 130,
+        "unparsed_text": 36
+      }
+    },
+    "C_terminal_tail_analogues": {
+      "included_rows": 42,
+      "rows_with_quantitative_or_bounded_solubility": 28,
+      "solubility_value_types": {
+        "unparsed_text": 8,
+        "exact_numeric": 28,
+        "missing": 6
+      }
+    },
+    "D_peptide_analogues": {
+      "included_rows": 13,
+      "rows_with_quantitative_or_bounded_solubility": 9,
+      "solubility_value_types": {
+        "exact_numeric": 9,
+        "unparsed_text": 1,
+        "missing": 3
+      }
+    }
+  },
+  "total_included_rows": 418,
+  "rows_without_identifier": 1,
+  "rows_without_chemical_name": 1,
+  "unique_identifier_count": 417,
+  "duplicate_identifier_count": 0,
+  "unique_chemical_name_count": 411,
+  "duplicate_chemical_name_count": 6,
+  "solubility_value_types": {
+    "exact_numeric": 234,
+    "missing": 139,
+    "unparsed_text": 45
+  },
+  "textual_category_counts": {
+    "Poorly Behaved": 45
+  },
+  "numeric_value_counts_by_type": {
+    "exact_numeric": {
+      "count": 234
+    }
+  },
+  "representation_support_counts": {
+    "canonical_linear_one_letter_only": 0,
+    "contains_parentheses": 414,
+    "contains_digits": 415,
+    "contains_lowercase": 403,
+    "explicit_terminal_modification": 413
+  },
+  "representation_interpretation": "Canonical protein pLMs do not natively encode the documented staples, terminal chemistry, D-residues, and other non-natural features; lossy sequence projection would alter the scientific input.",
+  "limitations": [
+    "Rows are close analogues from three related development sections, not a broad general-peptide sample.",
+    "The audit counts rows carrying an identifier or a chemical name and applies no peptide-versus-control eligibility rule.",
+    "Textual outcome categories are retained as aggregate counts and are not converted to numeric values.",
+    "The audit does not infer chemical equivalence from the name strings.",
+    "Exact scaffold clustering requires chemically explicit structure processing."
+  ]
+}

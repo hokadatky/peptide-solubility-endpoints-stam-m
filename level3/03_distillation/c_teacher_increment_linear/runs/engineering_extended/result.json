@@ -1,0 +1,49 @@
+{
+  "source_npz_bytes": 10339,
+  "float64_npz_bytes": 20301,
+  "portable_sha256": "46edaba36a837e1247b687b21995dbac3ff2e4f1f29d1981ce292f1527ca03be",
+  "inference_parameters": 2499,
+  "array_bytes": 9996,
+  "parity_float64": {
+    "2": 2.966995372055692e-06,
+    "3": 1.139118392390337e-07,
+    "4": 3.078420540703064e-07,
+    "5": 7.816210320088501e-07,
+    "6": 1.312899078231844e-06
+  },
+  "parity_float32_all_oof_rows": {
+    "2": 9.108177892125369e-06,
+    "3": 2.4423257815597843e-06,
+    "4": 1.8969281607716937e-06,
+    "5": 5.158789669112984e-06,
+    "6": 4.566726191868042e-06
+  },
+  "timings": {
+    "100": {
+      "median_ms": 0.300979,
+      "p95_ms": 0.3235524
+    },
+    "300": {
+      "median_ms": 0.404354,
+      "p95_ms": 0.41629585
+    },
+    "500": {
+      "median_ms": 0.5125835,
+      "p95_ms": 0.58550655
+    },
+    "1000": {
+      "median_ms": 0.765521,
+      "p95_ms": 0.8230919999999999
+    },
+    "2825": {
+      "median_ms": 1.7259585,
+      "p95_ms": 1.81214645
+    }
+  },
+  "batch": 1,
+  "warmups": 20,
+  "repeats": 100,
+  "platform": "macOS-15.4-arm64-arm-64bit",
+  "numpy": "1.26.4",
+  "scope": "float32 coefficient storage; NumPy mixed precision inputs/accumulation; one BLAS thread; complete sequence-to-score, synthetic inputs"
+}

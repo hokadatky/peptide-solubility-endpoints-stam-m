@@ -1,0 +1,165 @@
+{
+  "calibration_diagnostics": {
+    "coefficients_finite": true,
+    "converged": true,
+    "convergence_warning": false,
+    "max_iter": 20000,
+    "n_iter": [
+      5
+    ],
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "warnings": []
+  },
+  "calibration_intercept": 0.01941182793092092,
+  "calibration_partition_raw_metrics": {
+    "auc": 0.799313109061147,
+    "average_precision": 0.7993068429648252,
+    "brier": 0.1828067854564379,
+    "log_loss": 0.5419654237658442
+  },
+  "calibration_slope": 1.07328377658834,
+  "checkpoint_sha256": "e9d05915746e5e7e9f4a694fd958c694364546025266578756ad280ee73699c9",
+  "grid": [
+    {
+      "C": 0.0001,
+      "diagnostics": {
+        "converged": true,
+        "iterations": [
+          20
+        ],
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 1024,
+      "selection_auc": 0.7732908285987444
+    },
+    {
+      "C": 0.001,
+      "diagnostics": {
+        "converged": true,
+        "iterations": [
+          38
+        ],
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 1024,
+      "selection_auc": 0.776655279295079
+    },
+    {
+      "C": 0.01,
+      "diagnostics": {
+        "converged": true,
+        "iterations": [
+          97
+        ],
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 1024,
+      "selection_auc": 0.765589129018311
+    },
+    {
+      "C": 0.1,
+      "diagnostics": {
+        "converged": true,
+        "iterations": [
+          264
+        ],
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 1024,
+      "selection_auc": 0.7607829883629588
+    },
+    {
+      "C": 1.0,
+      "diagnostics": {
+        "converged": true,
+        "iterations": [
+          642
+        ],
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 1024,
+      "selection_auc": 0.7599685172667873
+    },
+    {
+      "C": 10.0,
+      "diagnostics": {
+        "converged": true,
+        "iterations": [
+          1651
+        ],
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 1024,
+      "selection_auc": 0.7600324570537764
+    },
+    {
+      "C": 100.0,
+      "diagnostics": {
+        "converged": true,
+        "iterations": [
+          3287
+        ],
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 1024,
+      "selection_auc": 0.7600979192166464
+    },
+    {
+      "C": 1000.0,
+      "diagnostics": {
+        "converged": true,
+        "iterations": [
+          8956
+        ],
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 1024,
+      "selection_auc": 0.7607053471930433
+    },
+    {
+      "C": 10000.0,
+      "diagnostics": {
+        "converged": true,
+        "iterations": [
+          12194
+        ],
+        "warnings": []
+      },
+      "eligible": true,
+      "k": 1024,
+      "selection_auc": 0.7613219094247246
+    }
+  ],
+  "kind": "logit",
+  "mode": "full",
+  "model_sha256": "a6e31f8301093e0707e46d7cc37e1c45baf224be32645ac6d45222ab92af7535",
+  "refit_diagnostics": {
+    "converged": true,
+    "iterations": [
+      39
+    ],
+    "warnings": []
+  },
+  "selected": {
+    "C": 0.001,
+    "diagnostics": {
+      "converged": true,
+      "iterations": [
+        38
+      ],
+      "warnings": []
+    },
+    "eligible": true,
+    "k": 1024,
+    "selection_auc": 0.776655279295079
+  }
+}

@@ -1,0 +1,25 @@
+contrast	status	reference	candidate	k	reference_n_success	candidate_n_success	precision_difference	ci95_low	ci95_high
+primary	prespecified in the parent run	B1_ORDER_LOGIT	B1_ORDER_PLUS_PROTT5_PLS_LOGIT	24	8	12	+0.166667	-0.083333	+0.333333
+primary	prespecified in the parent run	B1_ORDER_LOGIT	B1_ORDER_PLUS_PROTT5_PLS_LOGIT	48	19	19	+0.000000	-0.104167	+0.125000
+primary	prespecified in the parent run	B1_ORDER_LOGIT	B1_ORDER_PLUS_PROTT5_PLS_LOGIT	96	37	41	+0.041667	-0.020833	+0.093750
+primary	prespecified in the parent run	B1_ORDER_LOGIT	B1_ORDER_PLUS_PROTT5_PLS_LOGIT	192	64	77	+0.067708	+0.015625	+0.114583
+primary	prespecified in the parent run	B1_ORDER_LOGIT	B1_ORDER_PLUS_PROTT5_PLS_LOGIT	384	171	178	+0.018229	-0.023438	+0.059896
+primary	prespecified in the parent run	B1_ORDER_LOGIT	B1_ORDER_PLUS_PROTT5_PLS_LOGIT	1550	836	815	-0.013548	-0.032258	+0.003871
+exploratory_full_embedding	exploratory in the parent run	B1_LOGIT	FULL_LOGIT	24	8	17	+0.375000	+0.083333	+0.583333
+exploratory_full_embedding	exploratory in the parent run	B1_LOGIT	FULL_LOGIT	48	19	31	+0.250000	+0.083333	+0.437500
+exploratory_full_embedding	exploratory in the parent run	B1_LOGIT	FULL_LOGIT	96	37	57	+0.208333	+0.093750	+0.343750
+exploratory_full_embedding	exploratory in the parent run	B1_LOGIT	FULL_LOGIT	192	64	110	+0.239583	+0.151042	+0.317708
+exploratory_full_embedding	exploratory in the parent run	B1_LOGIT	FULL_LOGIT	384	171	212	+0.106771	+0.052083	+0.161458
+exploratory_full_embedding	exploratory in the parent run	B1_LOGIT	FULL_LOGIT	1550	836	842	+0.003871	-0.014839	+0.021935
+exploratory_pca_logistic	exploratory in the parent run	B1_LOGIT	PCA_LOGIT	24	8	10	+0.083333	-0.125000	+0.333333
+exploratory_pca_logistic	exploratory in the parent run	B1_LOGIT	PCA_LOGIT	48	19	16	-0.062500	-0.145833	+0.041667
+exploratory_pca_logistic	exploratory in the parent run	B1_LOGIT	PCA_LOGIT	96	37	35	-0.020833	-0.062500	+0.041667
+exploratory_pca_logistic	exploratory in the parent run	B1_LOGIT	PCA_LOGIT	192	64	75	+0.057292	+0.005208	+0.078125
+exploratory_pca_logistic	exploratory in the parent run	B1_LOGIT	PCA_LOGIT	384	171	171	+0.000000	-0.039062	+0.036458
+exploratory_pca_logistic	exploratory in the parent run	B1_LOGIT	PCA_LOGIT	1550	836	837	+0.000645	-0.018065	+0.016129
+exploratory_pca_hgb	exploratory in the parent run	B1_HGB	PCA_HGB	24	15	15	+0.000000	-0.208333	+0.291667
+exploratory_pca_hgb	exploratory in the parent run	B1_HGB	PCA_HGB	48	30	32	+0.041667	-0.125000	+0.229167
+exploratory_pca_hgb	exploratory in the parent run	B1_HGB	PCA_HGB	96	57	62	+0.052083	-0.072917	+0.177083
+exploratory_pca_hgb	exploratory in the parent run	B1_HGB	PCA_HGB	192	110	122	+0.062500	-0.031250	+0.135417
+exploratory_pca_hgb	exploratory in the parent run	B1_HGB	PCA_HGB	384	235	238	+0.007812	-0.044271	+0.065104
+exploratory_pca_hgb	exploratory in the parent run	B1_HGB	PCA_HGB	1550	873	848	-0.016129	-0.032903	+0.001290

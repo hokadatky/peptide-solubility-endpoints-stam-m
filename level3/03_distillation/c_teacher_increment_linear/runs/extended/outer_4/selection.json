@@ -1,0 +1,784 @@
+{
+  "distilled": {
+    "space": "logit",
+    "param": 10000,
+    "gamma": 1,
+    "inner_mean_auc": 0.7153510486435539
+  },
+  "hard": {
+    "space": "probability",
+    "param": 10000,
+    "gamma": 1,
+    "inner_mean_auc": 0.709719874921271
+  },
+  "inner_results": [
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.7013545526331775,
+      "hard": 0.7013545526331775
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.7047416934945029,
+      "hard": 0.70607954200328
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.704788768754176,
+      "hard": 0.7004927716698051
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.6949097977282391,
+      "hard": 0.6705977039421734
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0,
+      "distilled": 0.7013545526331775,
+      "hard": 0.7013545526331775
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0.25,
+      "distilled": 0.7031555609548685,
+      "hard": 0.7043127012087712
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0.5,
+      "distilled": 0.7046057826641561,
+      "hard": 0.7060552450950617
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 1,
+      "distilled": 0.7059671688027699,
+      "hard": 0.7065654801676486
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0,
+      "distilled": 0.7013545526331775,
+      "hard": 0.7013545526331775
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0.25,
+      "distilled": 0.7015550021259794,
+      "hard": 0.7018814918301646
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0.5,
+      "distilled": 0.7018108789406547,
+      "hard": 0.7023689485512968
+    },
+    {
+      "inner": 2,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 1,
+      "distilled": 0.70222468565875,
+      "hard": 0.7032330073498148
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.7013545526331775,
+      "hard": 0.7013545526331775
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.7064629775861022,
+      "hard": 0.7024798031950434
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.7055655105387839,
+      "hard": 0.6895477737957845
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.6947457935977648,
+      "hard": 0.6567059466682865
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0,
+      "distilled": 0.7013545526331775,
+      "hard": 0.7013545526331775
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0.25,
+      "distilled": 0.7055321022899835,
+      "hard": 0.7028882949644659
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0.5,
+      "distilled": 0.7086633663366337,
+      "hard": 0.7022216485452226
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 1,
+      "distilled": 0.7117141468748103,
+      "hard": 0.6950738018587135
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0,
+      "distilled": 0.7013545526331775,
+      "hard": 0.7013545526331775
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0.25,
+      "distilled": 0.7032421186903967,
+      "hard": 0.7006347567272064
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0.5,
+      "distilled": 0.704920123914232,
+      "hard": 0.6997372896798882
+    },
+    {
+      "inner": 2,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 1,
+      "distilled": 0.7076307477373505,
+      "hard": 0.6975551236105204
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.6883694779116466,
+      "hard": 0.6883694779116466
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.6940255567725446,
+      "hard": 0.6896633807959109
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.6962066447608617,
+      "hard": 0.6810376049653157
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.6919445052939028,
+      "hard": 0.6508455640744797
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0,
+      "distilled": 0.6883694779116466,
+      "hard": 0.6883694779116466
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0.25,
+      "distilled": 0.6908375319459656,
+      "hard": 0.6908243884629426
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0.5,
+      "distilled": 0.6926951442132165,
+      "hard": 0.6916422051843738
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 1,
+      "distilled": 0.6958130704636729,
+      "hard": 0.6901416575392478
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0,
+      "distilled": 0.6883694779116466,
+      "hard": 0.6883694779116466
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0.25,
+      "distilled": 0.6889331872946329,
+      "hard": 0.6890470974808324
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0.5,
+      "distilled": 0.6894078130704637,
+      "hard": 0.6896035049288061
+    },
+    {
+      "inner": 3,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 1,
+      "distilled": 0.6902227090178897,
+      "hard": 0.6906082511865643
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.6883694779116466,
+      "hard": 0.6883694779116466
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.6953472070098576,
+      "hard": 0.6850324936108068
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.6969843008397225,
+      "hard": 0.6715458196422052
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.6919678714859439,
+      "hard": 0.6379496166484118
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0,
+      "distilled": 0.6883694779116466,
+      "hard": 0.6883694779116466
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0.25,
+      "distilled": 0.6927827674333699,
+      "hard": 0.687648046732384
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0.5,
+      "distilled": 0.6963972252646952,
+      "hard": 0.6845724717050019
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 1,
+      "distilled": 0.7006820007301935,
+      "hard": 0.6737364001460386
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0,
+      "distilled": 0.6883694779116466,
+      "hard": 0.6883694779116466
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0.25,
+      "distilled": 0.6903001095290252,
+      "hard": 0.6871865644395764
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0.5,
+      "distilled": 0.6920233661920409,
+      "hard": 0.6858882803943045
+    },
+    {
+      "inner": 3,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 1,
+      "distilled": 0.6949499817451625,
+      "hard": 0.682609711573567
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.7215050321846438,
+      "hard": 0.7215050321846438
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.726595747833612,
+      "hard": 0.7290051507284516
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.7273936958402977,
+      "hard": 0.7253265881906659
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.7195646182296667,
+      "hard": 0.6980889256374693
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0,
+      "distilled": 0.7215050321846438,
+      "hard": 0.7215050321846438
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0.25,
+      "distilled": 0.7237721825100467,
+      "hard": 0.7255866436691679
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0.5,
+      "distilled": 0.7255421897412189,
+      "hard": 0.7280219780219781
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 1,
+      "distilled": 0.7269684199295849,
+      "hard": 0.7293170691228942
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0,
+      "distilled": 0.7215050321846438,
+      "hard": 0.7215050321846438
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0.25,
+      "distilled": 0.7215880128501487,
+      "hard": 0.7220503337008192
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0.5,
+      "distilled": 0.7216976658724231,
+      "hard": 0.7225815581398106
+    },
+    {
+      "inner": 5,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 1,
+      "distilled": 0.7217887964247187,
+      "hard": 0.7236958699337339
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.7215050321846438,
+      "hard": 0.7215050321846438
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.7285420889789822,
+      "hard": 0.7296712187488887
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.7300298137676777,
+      "hard": 0.721137546380265
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.7235232405135317,
+      "hard": 0.6874592505660467
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0,
+      "distilled": 0.7215050321846438,
+      "hard": 0.7215050321846438
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0.25,
+      "distilled": 0.7261193499057577,
+      "hard": 0.7260497054186374
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0.5,
+      "distilled": 0.7294667306803229,
+      "hard": 0.727968633308439
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 1,
+      "distilled": 0.7332260511872162,
+      "hard": 0.7256036843415484
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0,
+      "distilled": 0.7215050321846438,
+      "hard": 0.7215050321846438
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0.25,
+      "distilled": 0.7234239600744455,
+      "hard": 0.7215109593750371
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0.5,
+      "distilled": 0.7250406012541935,
+      "hard": 0.7215524497077895
+    },
+    {
+      "inner": 5,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 1,
+      "distilled": 0.7281805303649964,
+      "hard": 0.7209315765141007
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.7051881451881452,
+      "hard": 0.7051881451881452
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.7091234691234691,
+      "hard": 0.7109261109261109
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.7101772301772302,
+      "hard": 0.7050912050912052
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.7029918229918231,
+      "hard": 0.6790912790912791
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0,
+      "distilled": 0.7051881451881452,
+      "hard": 0.7051881451881452
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0.25,
+      "distilled": 0.7073163873163874,
+      "hard": 0.7091885891885892
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 0.5,
+      "distilled": 0.708973988973989,
+      "hard": 0.712067192067192
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 10000,
+      "gamma": 1,
+      "distilled": 0.7113701113701114,
+      "hard": 0.7128552928552929
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0,
+      "distilled": 0.7051881451881452,
+      "hard": 0.7051881451881452
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0.25,
+      "distilled": 0.7054190254190255,
+      "hard": 0.7059207459207459
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 0.5,
+      "distilled": 0.7057283457283458,
+      "hard": 0.7065926665926666
+    },
+    {
+      "inner": 6,
+      "space": "probability",
+      "param": 100000,
+      "gamma": 1,
+      "distilled": 0.7061664261664262,
+      "hard": 0.7078195878195879
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0,
+      "distilled": 0.7051881451881452,
+      "hard": 0.7051881451881452
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0.25,
+      "distilled": 0.711139231139231,
+      "hard": 0.71002479002479
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 0.5,
+      "distilled": 0.7107263107263108,
+      "hard": 0.7013667813667814
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 1000,
+      "gamma": 1,
+      "distilled": 0.7027979427979428,
+      "hard": 0.6710593110593112
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0,
+      "distilled": 0.7051881451881452,
+      "hard": 0.7051881451881452
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0.25,
+      "distilled": 0.7096607096607095,
+      "hard": 0.7085240685240686
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 0.5,
+      "distilled": 0.7126207126207127,
+      "hard": 0.7093706293706293
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 10000,
+      "gamma": 1,
+      "distilled": 0.7157819957819958,
+      "hard": 0.7052754652754653
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0,
+      "distilled": 0.7051881451881452,
+      "hard": 0.7051881451881452
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0.25,
+      "distilled": 0.706990786990787,
+      "hard": 0.704945424945425
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 0.5,
+      "distilled": 0.7085521885521885,
+      "hard": 0.7044644244644245
+    },
+    {
+      "inner": 6,
+      "space": "logit",
+      "param": 100000,
+      "gamma": 1,
+      "distilled": 0.7112635512635512,
+      "hard": 0.7031383431383432
+    }
+  ]
+}

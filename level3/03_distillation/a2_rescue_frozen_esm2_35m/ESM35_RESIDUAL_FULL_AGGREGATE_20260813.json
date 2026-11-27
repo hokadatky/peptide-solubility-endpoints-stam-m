@@ -1,0 +1,103 @@
+{
+  "confirmation_fold_loaded": false,
+  "device": "cpu",
+  "endpoint": "recombinant soluble-expression status in E. coli",
+  "evaluation_fold": 0,
+  "evaluation_rows": 1621,
+  "explicit_exclusion": "not direct aqueous solubility of a purified peptide",
+  "exploratory_only": true,
+  "fit_metadata": {
+    "distilled": {
+      "all_losses_finite": true,
+      "arm": "distilled",
+      "batches": 1025,
+      "loss_final": [
+        0.7288890480995178,
+        0.578835129737854,
+        0.8789429664611816
+      ],
+      "loss_initial": [
+        0.9592602849006653,
+        0.9028632640838623,
+        1.0156573057174683
+      ],
+      "total_encoder_parameters": 33992881,
+      "trainable_parameters": 5543521
+    },
+    "hard": {
+      "all_losses_finite": true,
+      "arm": "hard",
+      "batches": 1025,
+      "loss_final": [
+        0.6242286562919617,
+        0.6242286562919617,
+        0.0
+      ],
+      "loss_initial": [
+        0.9028632640838623,
+        0.9028632640838623,
+        0.0
+      ],
+      "total_encoder_parameters": 33992881,
+      "trainable_parameters": 5543521
+    }
+  },
+  "fraction_over_1022_train": 0.02037082215174433,
+  "gates": {
+    "distillation_gain_pass": true,
+    "distilled_minus_hard_auc": 0.022622505587119424,
+    "overall_pass": false,
+    "required_auc_for_80pct_retention": 0.7506065145508687,
+    "retention_pass": false,
+    "teacher_gain_retention": 0.7708489530701602
+  },
+  "metrics": {
+    "B1_OFFSET": {
+      "average_precision": 0.7097790731745979,
+      "brier": 0.22284167309660938,
+      "log_loss": 0.643836425488212,
+      "roc_auc": 0.6945642046803924
+    },
+    "ESM35_DISTILLED_RESIDUAL": {
+      "average_precision": 0.7541277652007374,
+      "brier": 0.20641461457591842,
+      "log_loss": 0.6116937200171948,
+      "roc_auc": 0.748564399544505
+    },
+    "ESM35_HARD_RESIDUAL": {
+      "average_precision": 0.7354264265052095,
+      "brier": 0.21250067389707908,
+      "log_loss": 0.6213696394659596,
+      "roc_auc": 0.7259418939573856
+    },
+    "PROTT5_TEACHER": {
+      "average_precision": 0.7701094834109876,
+      "brier": 0.20312280301957794,
+      "log_loss": 0.6094132319844044,
+      "roc_auc": 0.7646170920184877
+    }
+  },
+  "mode": "full",
+  "model": "facebook/esm2_t12_35M_UR50D",
+  "private_prediction_path": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_distillation_rescue_run_20260813_v2/esm35_residual_full_predictions.parquet",
+  "runtime_seconds": 2355.9657640457153,
+  "schema": "esm35-residual-distillation-probe-v1",
+  "sequence_policy": "full through 1022 residues; first/last concatenation above 1022",
+  "settings": {
+    "batch_size": 8,
+    "distillation_weight": 0.5,
+    "encoder_lr": 1e-05,
+    "epochs": 1,
+    "head_lr": 0.0005,
+    "top_layers_unfrozen": 2
+  },
+  "status": "COMPLETE",
+  "train_folds": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "training_rows": 8198
+}

@@ -1,0 +1,45 @@
+{
+  "import_source": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_distillation_rescue_run_20260813_v2/correct_residue_pool_esm35_design.npz",
+  "source_sha256": "397cf22451499dfc926c4be87b232db68546a912d325debb01406d5832cda7a2",
+  "metadata": {
+    "device": "mps",
+    "dimension": 480,
+    "model": "facebook/esm2_t12_35M_UR50D",
+    "pooling": "residue-only arithmetic mean; special tokens excluded",
+    "row_count": 9819,
+    "sequence_policy": "full through 1022 residues; first/last concatenation above 1022"
+  },
+  "retained_folds": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "retained_rows": 8198,
+  "checkpoint_revision": "6fbf070e65b0b7291e7bbcd451118c216cff79d8",
+  "checkpoint_files": {
+    "special_tokens_map.json": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+    "config.json": "ae07364efa51e0fa1d81da3fe608f6d948abdbbb69785ba6e1df379a458e58ee",
+    "model.safetensors": "e35647818e0e064351d4531ed480d225a002567b4b2b93ad3a9246d753150fc0",
+    "tokenizer_config.json": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad",
+    "vocab.txt": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03"
+  },
+  "torch": "2.5.1",
+  "device": "cpu",
+  "fresh_probe_max_abs_embedding_errors": [
+    1.9073486328125e-06,
+    9.5367431640625e-07,
+    9.5367431640625e-07,
+    4.76837158203125e-07
+  ],
+  "probe_rows": [
+    0,
+    5708,
+    11434,
+    5717
+  ],
+  "model_parameters_all_loaded": 33992881,
+  "created_unix": 1788885349.359991,
+  "scope": "frozen pretrained embedding import only; no previous fitted head or predictions"
+}

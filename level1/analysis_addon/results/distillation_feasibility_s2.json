@@ -1,0 +1,50 @@
+{
+  "schema": "privacy-safe-fixed-distillation-feasibility-v1",
+  "completed_date": "2026-08-13",
+  "status": "scientific_null_engineering_pass_not_promoted",
+  "endpoint": "Production-stage recombinant soluble-expression status in E. coli; not direct aqueous solubility of a purified peptide.",
+  "design": {
+    "design_training_folds": [2, 3, 4, 5, 6],
+    "teacher_selection_fold": 0,
+    "untouched_confirmation_fold": 1,
+    "confirmation_rows": 1617,
+    "confirmation_groups_30pct_identity": 1531,
+    "selected_teacher": "ProtT5",
+    "student": "TriPepLite-v1",
+    "student_parameters": 265633,
+    "distillation_alpha": 0.5,
+    "temperature": 2.0,
+    "hard_only_alpha": 0.0,
+    "primary_contrast": "distilled minus identical-architecture hard-only student",
+    "bootstrap_unit": "30%-identity group",
+    "bootstrap_replicates": 10000,
+    "teacher_gain_retention_target": 0.8
+  },
+  "confirmation_metrics": [
+    {"arm": "B1 order-aware reference", "roc_auc": 0.707059, "average_precision": 0.735493, "brier": 0.215922, "log_loss": 0.617170},
+    {"arm": "Selected ProtT5 teacher", "roc_auc": 0.790151, "average_precision": 0.805882, "brier": 0.188172, "log_loss": 0.554764},
+    {"arm": "Hard-only TriPepLite", "roc_auc": 0.641493, "average_precision": 0.610860, "brier": 0.363824, "log_loss": 4.778159},
+    {"arm": "ProtT5-distilled TriPepLite", "roc_auc": 0.651587, "average_precision": 0.627644, "brier": 0.259097, "log_loss": 0.778190}
+  ],
+  "primary_auc_contrast": {
+    "point_gain": 0.010095,
+    "ci95": [-0.007951, 0.027800],
+    "interpretation": "The interval includes zero; an ROC-AUC benefit from response distillation was not established."
+  },
+  "teacher_gain_retention": -0.667587,
+  "deployment_audit": {
+    "compressed_bytes": 989183,
+    "artifact_sha256": "4a0cd3792f776e6c0ca8fb34d2bd304846305617a3e684c95952e9974d3fa42b",
+    "teacher_required_at_inference": false,
+    "median_cpu_latency_ms_one_500aa_sequence": 0.394584,
+    "p95_cpu_latency_ms_one_500aa_sequence": 0.468566,
+    "torch_numpy_max_probability_difference": 7.0934e-08,
+    "privacy_gate": "PASS"
+  },
+  "decision": "Engineering feasibility did not satisfy the scientific accuracy and retention gates. The student was not promoted into PepSol Explorer and is not cleared for distribution.",
+  "evidence_hashes": {
+    "teacher_selection_json_sha256": "f90917ab70edd77d9ca43cc56c49005e28ec9a6fafaf706687fcd3359cdd6464",
+    "confirmation_aggregate_json_sha256": "5bb6bb982e7302d2320cf62e54b4b52dc390ee6c2463ecc01cfaae0c003622f3",
+    "deployment_benchmark_json_sha256": "b6604521b1eef290e1d8463f4a0aa2fb60b1c78c97faaa4d1db0355a9eb1d16f"
+  }
+}

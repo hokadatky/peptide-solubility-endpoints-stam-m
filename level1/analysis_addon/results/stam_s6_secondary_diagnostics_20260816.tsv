@@ -1,0 +1,6 @@
+metric	label	reference	candidate	candidate_minus_reference	preferred_direction	interpretation
+pr_auc	PR-AUC	0.7423662792916608	0.8013552163792494	0.05898893708758868	higher	descriptive improvement
+brier	Brier score	0.21303168877322712	0.1904001256817954	-0.022631563091431717	lower	descriptive improvement
+log_loss	Log loss	0.6115954943534385	0.5635515651002654	-0.048043929253173134	lower	descriptive improvement
+calibration_slope	Calibration slope	0.7126595977131277	0.69547895458183	-0.017180643131297746	closer_to_1	did not improve; candidate is farther from 1
+calibration_intercept	Calibration intercept	-0.028322003443225018	-0.025574958788744374	0.002747044654480644	closer_to_0	descriptively closer to 0; no external calibration evidence

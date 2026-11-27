@@ -1,0 +1,7 @@
+{
+  "source_runtime": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/private_tools/v4_external_sealed_runtime.py",
+  "source_runtime_sha256": "c53f8e81a3f2cddcd6dd7ddf1a229dc9b9ad5a56b3bc1e1fc8163f3ce9ec90bb",
+  "changes": "Only ROOT/PAPER import paths changed. Original CLI is not invoked; new runner calls audited functions with a fresh run_id/output root.",
+  "source_modules": "${WORKSPACE}/paper/peptide_solubility_review/analysis_addon/src",
+  "scope": "STAM-M only; no imports from other projects"
+}

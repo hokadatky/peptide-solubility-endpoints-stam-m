@@ -1,0 +1,97 @@
+{
+  "clustering": {
+    "cluster_mode": "connected component through MMseqs2 cascaded clustering",
+    "cluster_table_sha256": "abe0e5f3d5d7798f54630813862af2aac078401f331077f979e5b1d01c7cb751",
+    "command": "mmseqs easy-cluster soluprot_train.fasta soluprot_train_mmseqs30 mmseqs_tmp30 --min-seq-id 0.30 -c 0.80 --cov-mode 0 --cluster-mode 1 -s 7.5 --threads 8",
+    "coverage_definition": "both query and target",
+    "coverage_threshold": 0.8,
+    "identity_threshold": 0.3,
+    "largest_cluster": 3,
+    "mixed_label_clusters": 670,
+    "n_clusters": 10715,
+    "singleton_clusters": 10031,
+    "tool": "MMseqs2",
+    "version": "17-b804f"
+  },
+  "external_clustering": {
+    "cluster_table_sha256": "f1610b3e5f68e4c1201758f6a3f1b8291649192b384cd61ed79d7d868253c449",
+    "largest_cluster": 4,
+    "mixed_label_clusters": 348,
+    "n_clusters": 2723,
+    "output_sha256": "6053e4d90e26ab2a13dd7e6f4c99da66e269a4a2711e5645ee13b70594e3b469",
+    "singleton_clusters": 2371
+  },
+  "external_input_sha256": "210ab22f2f26cdf44f240ed164320c1775e7ca1c118320fd0698d8a3bab0e222",
+  "fold_roles": {
+    "0": "model_selection",
+    "1": "calibration",
+    "2-6": "fit"
+  },
+  "input_sha256": "6b602a5d9dba353ffd1a256069506f999d4cc5d6f4f8275e2024d5176b0c8abd",
+  "n_folds": 7,
+  "output_sha256": "28a63f9d40c47bda0ff936830eacbf818572b78f67f23417ad01e3bee528ad0e",
+  "partition_summary": {
+    "calibration": {
+      "clusters": 1531,
+      "label_counts": {
+        "0": 810,
+        "1": 807
+      },
+      "length": {
+        "max": 2140,
+        "mean": 363.1614100185529,
+        "median": 321.0,
+        "min": 34
+      },
+      "rows": 1617
+    },
+    "fit": {
+      "clusters": 7653,
+      "label_counts": {
+        "0": 4091,
+        "1": 4107
+      },
+      "length": {
+        "max": 2813,
+        "mean": 365.131617467675,
+        "median": 318.0,
+        "min": 42
+      },
+      "rows": 8198
+    },
+    "model_selection": {
+      "clusters": 1531,
+      "label_counts": {
+        "0": 817,
+        "1": 804
+      },
+      "length": {
+        "max": 2825,
+        "mean": 368.179518815546,
+        "median": 316.0,
+        "min": 28
+      },
+      "rows": 1621
+    }
+  },
+  "seed": 20260804,
+  "software": {
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-15.4-arm64-arm-64bit",
+    "python": "3.9.18",
+    "scikit_learn": "1.6.1"
+  },
+  "stratification": {
+    "length_strata": {
+      "151to300": "150 < length <= 300",
+      "301to500": "300 < length <= 500",
+      "gt500": "length > 500",
+      "le150": "length <= 150"
+    },
+    "variables": [
+      "binary label",
+      "fixed sequence-length stratum"
+    ]
+  }
+}

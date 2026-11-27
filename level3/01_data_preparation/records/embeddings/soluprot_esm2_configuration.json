@@ -1,0 +1,13 @@
+{
+  "batch_schedule_hash": "2dafaa28c9a025d8e7255f4451f6fcae1358a85df8279930bddc594fd973acdd",
+  "checkpoint": "facebook/esm2_t33_650M_UR50D",
+  "chunk_residues": 900,
+  "configuration_hash": "9ae95fe369730d7d020ed30d5f5b1f70937650988b9a4f8c476cd07064da5a5a",
+  "dtype": "float16",
+  "max_batch_size": 32,
+  "max_batch_tokens": 3600,
+  "model_key": "esm2",
+  "n_records": 14536,
+  "record_id_hash": "6b4d1a7e1464aa89acc8d31ad5f68388d65843aaaadb71db36411caefb5d5e65",
+  "revision": "08e4846e537177426273712802403f7ba8261b6c"
+}

@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "splits": {
+    "train": {
+      "rows": 11436,
+      "labels_match_original": true,
+      "sequences_match_original": true,
+      "all_primary_features_recomputed": true,
+      "max_feature_abs_error": 1.4210854715202004e-14,
+      "length_by_label": {
+        "0": {
+          "n": 5718,
+          "median": 320.0,
+          "mean": 366.9987757957328,
+          "q10": 134.0,
+          "q90": 643.0
+        },
+        "1": {
+          "n": 5718,
+          "median": 316.0,
+          "mean": 363.5713536201469,
+          "q10": 129.70000000000005,
+          "q90": 648.0
+        }
+      },
+      "terminal_polyhistidine": {
+        "False": {
+          "n": 11434,
+          "positive_fraction": 0.5
+        },
+        "True": {
+          "n": 2,
+          "positive_fraction": 0.5
+        }
+      },
+      "length_auc_descriptive": 0.49348401634425554
+    },
+    "external_test": {
+      "rows": 3100,
+      "labels_match_original": true,
+      "sequences_match_original": true,
+      "all_primary_features_recomputed": true,
+      "max_feature_abs_error": 1.4210854715202004e-14,
+      "length_by_label": {
+        "0": {
+          "n": 1550,
+          "median": 219.0,
+          "mean": 243.83548387096775,
+          "q10": 106.0,
+          "q90": 419.0
+        },
+        "1": {
+          "n": 1550,
+          "median": 224.0,
+          "mean": 243.7225806451613,
+          "q10": 107.0,
+          "q90": 418.0
+        }
+      },
+      "terminal_polyhistidine": {
+        "False": {
+          "n": 3100,
+          "positive_fraction": 0.5
+        },
+        "True": {
+          "n": 0,
+          "positive_fraction": null
+        }
+      },
+      "length_auc_descriptive": 0.499219562955255
+    }
+  },
+  "files": {
+    "${WORKSPACE}/data/external/soluprot/soluprot_data/training_set.csv": "14224140cee84d599c1327d70c4d9575a9eb7254301697f7ca25ef43cd03b989",
+    "${WORKSPACE}/data/external/soluprot/soluprot_data/training_set.fasta": "55cbd5a653bc35d8183608ecd3a186bd0bbe1fe155682eb5dc4efb1c575d8238",
+    "${WORKSPACE}/data/solubility/soluprot_train_partitions.csv": "28a63f9d40c47bda0ff936830eacbf818572b78f67f23417ad01e3bee528ad0e",
+    "${WORKSPACE}/data/external/soluprot/soluprot_data/test_set.csv": "7b56b322899c5cfc4fc10628d5f79c1cb03abb93346cbd20e89f0ed96b51732b",
+    "${WORKSPACE}/data/external/soluprot/soluprot_data/test_set.fasta": "3c78f79b7d3eeb2123b4efe5840c949eeeaac6ad27da4ada9b4e6b242187801d",
+    "${WORKSPACE}/data/solubility/soluprot_external_test_clustered.csv": "6053e4d90e26ab2a13dd7e6f4c99da66e269a4a2711e5645ee13b70594e3b469"
+  },
+  "embedding_provenance": {
+    "status": "PASS",
+    "pooling": "residue-only arithmetic mean across every biological residue",
+    "special_tokens_excluded": true,
+    "checkpoint": "Rostlab/prot_t5_xl_half_uniref50-enc",
+    "dimension": 1024,
+    "input_hashes_match_extraction_metadata": true,
+    "embedding_values_not_reextracted": true
+  }
+}

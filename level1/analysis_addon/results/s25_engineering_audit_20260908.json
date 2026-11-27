@@ -1,0 +1,170 @@
+{
+  "scope": "synthetic engineering benchmark; no evaluation labels read",
+  "teacher_reference_parameters_approx": 1200000000,
+  "teacher_latency_measured": false,
+  "teacher_memory_measured": false,
+  "teacher_ratio_is_approximate": true,
+  "fp16_policy": "storage only; upcast to FP32 for compute",
+  "warmups": 20,
+  "repetitions": 100,
+  "batch_size": 1,
+  "numpy": "1.26.4",
+  "python": "3.10.17",
+  "platform": "macOS-15.4-arm64-arm-64bit",
+  "machine": "arm64",
+  "processor": "arm",
+  "artifacts": {
+    "fixed_distilled": {
+      "source_sha256": "4a0cd3792f776e6c0ca8fb34d2bd304846305617a3e684c95952e9974d3fa42b",
+      "original_npz_bytes": 989183,
+      "deployable_parameters": 265633,
+      "training_only_parameters_removed": 0,
+      "fp32_parameter_bytes": 1062532,
+      "fp16_parameter_bytes": 531266,
+      "fp32_all_array_payload_bytes": 1063901,
+      "fp16_all_array_payload_bytes": 532535,
+      "fp32_npz_bytes": 989183,
+      "fp16_npz_bytes": 495068,
+      "fp32_npz_sha256": "4a0cd3792f776e6c0ca8fb34d2bd304846305617a3e684c95952e9974d3fa42b",
+      "fp16_npz_sha256": "df3306613e0eae95ccce54c14642f7f5421c4afa8da6cc008d936937a773531e",
+      "source_load_ms_warm_filesystem": 6.791917,
+      "teacher_to_student_parameter_ratio_approx": 4517.511002021586,
+      "parameter_reduction_percent_approx": 99.97786391666666,
+      "complete_sequence_to_score_bundle": true,
+      "timings": {
+        "100": {
+          "core_plus_tokenization": {
+            "median_ms": 0.1108335,
+            "p95_ms": 0.11664585000000001,
+            "min_ms": 0.108166,
+            "max_ms": 0.118584
+          },
+          "sequence_to_score": {
+            "median_ms": 0.19458350000000002,
+            "p95_ms": 0.20926809999999998,
+            "min_ms": 0.189583,
+            "max_ms": 0.314042
+          }
+        },
+        "300": {
+          "core_plus_tokenization": {
+            "median_ms": 0.14477099999999998,
+            "p95_ms": 0.15626875,
+            "min_ms": 0.139333,
+            "max_ms": 0.230083
+          },
+          "sequence_to_score": {
+            "median_ms": 0.280229,
+            "p95_ms": 0.3034149,
+            "min_ms": 0.26975,
+            "max_ms": 0.371666
+          }
+        },
+        "500": {
+          "core_plus_tokenization": {
+            "median_ms": 0.1776245,
+            "p95_ms": 0.2924666999999999,
+            "min_ms": 0.172958,
+            "max_ms": 0.674167
+          },
+          "sequence_to_score": {
+            "median_ms": 0.374729,
+            "p95_ms": 0.44912289999999994,
+            "min_ms": 0.360042,
+            "max_ms": 0.519792
+          }
+        },
+        "646": {
+          "core_plus_tokenization": {
+            "median_ms": 0.2054375,
+            "p95_ms": 0.21450415,
+            "min_ms": 0.198541,
+            "max_ms": 0.270792
+          },
+          "sequence_to_score": {
+            "median_ms": 0.4432705,
+            "p95_ms": 0.5266309499999999,
+            "min_ms": 0.418625,
+            "max_ms": 0.567167
+          }
+        }
+      },
+      "quantization_max_abs_probability_delta": 0.00036799805868170665,
+      "quantization_probe_count": 24
+    },
+    "cnn_reconstruction": {
+      "source_sha256": "b2844c907a80205cc5c6de0faf8bd7f9a2c78134249c71b86d2d666c83a1db07",
+      "original_npz_bytes": 394124,
+      "deployable_parameters": 99617,
+      "training_only_parameters_removed": 5152,
+      "fp32_parameter_bytes": 398468,
+      "fp16_parameter_bytes": 199234,
+      "fp32_all_array_payload_bytes": 398468,
+      "fp16_all_array_payload_bytes": 199234,
+      "fp32_npz_bytes": 374484,
+      "fp16_npz_bytes": 188732,
+      "fp32_npz_sha256": "828412aa6352686ae12c5c39124b7edb9740586afe8c40a894cf00981f67f4bb",
+      "fp16_npz_sha256": "9fde082f8c1aa0ec9771b44165116e4b565c23f6fda12b90e7e43f1a68f32cdb",
+      "source_load_ms_warm_filesystem": 3.719792,
+      "teacher_to_student_parameter_ratio_approx": 12046.136703574692,
+      "parameter_reduction_percent_approx": 99.99169858333333,
+      "complete_sequence_to_score_bundle": false,
+      "timings": {
+        "100": {
+          "core_plus_tokenization": {
+            "median_ms": 29.2517915,
+            "p95_ms": 30.59335385,
+            "min_ms": 28.490625,
+            "max_ms": 32.011542
+          },
+          "scope": "padded 768; standardized zero descriptors; excludes descriptor calculation/normalization"
+        },
+        "300": {
+          "core_plus_tokenization": {
+            "median_ms": 29.3725205,
+            "p95_ms": 30.3489327,
+            "min_ms": 28.535333,
+            "max_ms": 30.933625
+          },
+          "scope": "padded 768; standardized zero descriptors; excludes descriptor calculation/normalization"
+        },
+        "500": {
+          "core_plus_tokenization": {
+            "median_ms": 29.3261875,
+            "p95_ms": 30.24321875,
+            "min_ms": 28.565333,
+            "max_ms": 33.757958
+          },
+          "scope": "padded 768; standardized zero descriptors; excludes descriptor calculation/normalization"
+        },
+        "646": {
+          "core_plus_tokenization": {
+            "median_ms": 29.120271000000002,
+            "p95_ms": 30.2160899,
+            "min_ms": 28.476334,
+            "max_ms": 30.905292
+          },
+          "scope": "padded 768; standardized zero descriptors; excludes descriptor calculation/normalization"
+        }
+      },
+      "quantization_max_abs_probability_delta": 0.0003133973983849292,
+      "quantization_probe_count": 24
+    }
+  },
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "filepath": "${HOME}/miniconda3/envs/sc8/lib/python3.10/site-packages/numpy/.dylibs/libopenblas64_.0.dylib",
+      "version": "0.3.23.dev",
+      "threading_layer": "pthreads",
+      "architecture": "armv8"
+    }
+  ],
+  "peak_process_rss_native_units": 68255744,
+  "rss_scope": "whole sequential benchmark process, not per-model RAM; bytes on macOS",
+  "torch_imported": false,
+  "transformers_imported": false
+}

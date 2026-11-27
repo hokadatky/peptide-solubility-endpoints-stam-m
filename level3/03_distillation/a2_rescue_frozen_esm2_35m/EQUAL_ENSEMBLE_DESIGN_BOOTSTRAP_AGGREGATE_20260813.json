@@ -1,0 +1,173 @@
+{
+  "auc_margin_to_80pct_target": {
+    "bootstrap_probability_nonnegative": 0.9092,
+    "ci95": [
+      -0.004147152218855468,
+      0.022316250327820655
+    ],
+    "point": 0.009022512894523715
+  },
+  "cluster_swap_auc_test": {
+    "n_replicates": 999,
+    "null_ci95": [
+      -0.003570656509374942,
+      0.0034834243714109963
+    ],
+    "null_median": -5.937265934696789e-05,
+    "observed_gain": 0.008656229257628656,
+    "p_value_two_sided": 0.001,
+    "seed": 20260813,
+    "unit": "cluster_swap"
+  },
+  "composition": "0.5 * residual-distilled ESM-2 35M probability + 0.5 * frozen-embedding ESM-2 35M/B1 hard probability",
+  "confirmation_fold_loaded": false,
+  "distilled_ensemble_minus_b1_auc": {
+    "bootstrap_mean": 0.06511902031967992,
+    "bootstrap_sd": 0.007272545398321009,
+    "bootstrap_seed": 20260813,
+    "bootstrap_unit": "cluster",
+    "ci90": [
+      0.05315426571142601,
+      0.07715332029245105
+    ],
+    "ci95": [
+      0.05089186147088853,
+      0.07964836574917616
+    ],
+    "invalid_fraction": 0.0,
+    "metric": "roc_auc",
+    "n_groups": 1531,
+    "n_replicates_invalid": 0,
+    "n_replicates_requested": 10000,
+    "n_replicates_valid": 10000,
+    "point_gain": 0.06506482276500003
+  },
+  "distilled_minus_identical_hard_ensemble": {
+    "auprc": {
+      "bootstrap_mean": 0.006458913867951099,
+      "bootstrap_sd": 0.0016599331603422993,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.0037663429975557496,
+        0.009214028472632132
+      ],
+      "ci95": [
+        0.0032644499877212243,
+        0.009739002987420206
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "auprc",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.006451031136986085
+    },
+    "brier": {
+      "bootstrap_mean": 0.002488541447208285,
+      "bootstrap_sd": 0.0007371750463796482,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.001271361383720654,
+        0.003678928822752406
+      ],
+      "ci95": [
+        0.00103732183690059,
+        0.003911318798423304
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "brier",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.002489248291411894
+    },
+    "log_loss": {
+      "bootstrap_mean": 0.00433641313280254,
+      "bootstrap_sd": 0.001989725533716932,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.0010048675469453206,
+        0.007551757350711343
+      ],
+      "ci95": [
+        0.00039030504409031394,
+        0.008112122311129583
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "log_loss",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.004329130048554841
+    },
+    "roc_auc": {
+      "bootstrap_mean": 0.008663430195512186,
+      "bootstrap_sd": 0.0015952505159673722,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "cluster",
+      "ci90": [
+        0.00605298567450876,
+        0.011271734600318129
+      ],
+      "ci95": [
+        0.005574019336385433,
+        0.011817052388309508
+      ],
+      "invalid_fraction": 0.0,
+      "metric": "roc_auc",
+      "n_groups": 1531,
+      "n_replicates_invalid": 0,
+      "n_replicates_requested": 10000,
+      "n_replicates_valid": 10000,
+      "point_gain": 0.008656229257628656
+    }
+  },
+  "endpoint": "recombinant soluble-expression status in E. coli",
+  "explicit_exclusion": "not direct aqueous solubility of a purified peptide",
+  "metrics": {
+    "B1_OFFSET": {
+      "auprc": 0.7097790731745979,
+      "brier": 0.22284167309660938,
+      "log_loss": 0.6438364253766822,
+      "roc_auc": 0.6945642046803924
+    },
+    "EQUAL_ENSEMBLE_DISTILLED": {
+      "auprc": 0.7653266806773369,
+      "brier": 0.20031921437092898,
+      "log_loss": 0.5860566080641334,
+      "roc_auc": 0.7596290274453924
+    },
+    "EQUAL_ENSEMBLE_HARD_CONTROL": {
+      "auprc": 0.7588756495403508,
+      "brier": 0.20280846266234087,
+      "log_loss": 0.5903857381126882,
+      "roc_auc": 0.7509727981877637
+    },
+    "PROTT5_TEACHER": {
+      "auprc": 0.7701094834109876,
+      "brier": 0.20312280301957794,
+      "log_loss": 0.6094132319844044,
+      "roc_auc": 0.7646170920184877
+    }
+  },
+  "private_prediction_path": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_distillation_rescue_run_20260813_v2/equal_ensemble_design_predictions.parquet",
+  "promotion_decision": "Not promotable from this design-fold diagnostic; freeze as the sole candidate for a future locked evaluation.",
+  "schema": "equal-probability-lightweight-ensemble-design-diagnostic-v1",
+  "selection_warning": "Equal weighting was evaluated after the component design-fold results were known; no weight search was performed.",
+  "status": "POST_HOC_EXPLORATORY_DESIGN_PASS",
+  "teacher_gain_retention": {
+    "bootstrap_probability_at_least_0_8": 0.9092,
+    "ci95": [
+      0.7484023704965815,
+      1.1843066692294135
+    ],
+    "point": 0.9287957318729565,
+    "valid_replicates": 10000
+  }
+}

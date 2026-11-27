@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-08-05",
+  "purpose": "Curated analytical record counts used only to compare endpoint families in Figure 3; counts are not pooled and are not model-performance estimates.",
+  "records": [
+    {
+      "label": "CamSol-PTM",
+      "records": 34,
+      "endpoint": "Direct peptide measurement",
+      "evidence_type": "Audited direct source",
+      "citation_key": "Oeller2023CamSolPTM",
+      "doi": "10.1038/s41467-023-42940-w",
+      "verification": "File-level audit of the separate Figure 3 source-data table"
+    },
+    {
+      "label": "Stapled series",
+      "records": 234,
+      "endpoint": "Direct peptide measurement",
+      "evidence_type": "Audited direct source",
+      "citation_key": "Chandramohan2024Stapled",
+      "doi": "10.1038/s41467-023-43346-4",
+      "verification": "File-level audit of exact numerical kinetic-solubility outcomes"
+    },
+    {
+      "label": "PEGASUS",
+      "records": 40,
+      "endpoint": "Direct peptide measurement",
+      "evidence_type": "Audited direct source",
+      "citation_key": "Baker2026PEGASUS",
+      "doi": "10.1021/acs.jmedchem.5c01836",
+      "verification": "File-level audit of the public direct-solubility subset"
+    },
+    {
+      "label": "eSOL",
+      "records": 3173,
+      "endpoint": "Cell-free soluble fraction",
+      "evidence_type": "Classical protein benchmark",
+      "citation_key": "Niwa2009ESOL",
+      "doi": "10.1073/pnas.0811922106",
+      "verification": "Primary article reports solubility data for 3,173 translated proteins"
+    },
+    {
+      "label": "SoluProt training",
+      "records": 11436,
+      "endpoint": "Recombinant-expression status",
+      "evidence_type": "Classical protein benchmark",
+      "citation_key": "Hon2021SoluProt",
+      "doi": "10.1093/bioinformatics/btaa1102",
+      "verification": "Primary article reports 11,436 training sequences; the separate balanced independent NESG-derived test set contains 3,100 sequences, with no training-test pair above 25% global sequence identity"
+    },
+    {
+      "label": "PeptideBERT / PROSO-derived",
+      "records": 18453,
+      "endpoint": "Production-stage status",
+      "evidence_type": "pLM-era benchmark",
+      "citation_key": "Guntuboina2023PeptideBERT",
+      "doi": "10.1021/acs.jpclett.3c02398",
+      "verification": "Primary article reports 18,453 sequences with 47.6% soluble and 52.4% insoluble; the integer class breakdown is not stated in the article and is therefore not recorded here"
+    },
+    {
+      "label": "PLM_Sol UESolDS",
+      "records": 78031,
+      "endpoint": "Integrated production status",
+      "evidence_type": "pLM-era benchmark",
+      "citation_key": "Zhang2024PLMSol",
+      "doi": "10.1093/bib/bbae404",
+      "verification": "Primary article reports 31,581 insoluble plus 46,450 soluble entries after filtering"
+    }
+  ],
+  "provenance_note": "Curated from primary articles. Values that the primary article does not state explicitly are not reconstructed from percentages or figures."
+}

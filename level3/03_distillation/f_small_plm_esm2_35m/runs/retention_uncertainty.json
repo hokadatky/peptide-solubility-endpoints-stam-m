@@ -1,0 +1,36 @@
+{
+  "scope": "descriptive paired bootstrap ratios conditional on fitted models; no method-selection correction",
+  "repeats": 10000,
+  "seed": 20260909,
+  "unit": "30%-identity cluster",
+  "ratios": {
+    "total_retention": {
+      "estimate": 0.7036036169414149,
+      "ci95": [
+        0.6216453489735384,
+        0.7898678233791812
+      ]
+    },
+    "hard_pretraining_retention": {
+      "estimate": 0.5821897944982988,
+      "ci95": [
+        0.4793325054043142,
+        0.6870012553531952
+      ]
+    },
+    "kd_retention_increment": {
+      "estimate": 0.12141382244311613,
+      "ci95": [
+        0.03423387542545008,
+        0.21296296906335815
+      ]
+    },
+    "remaining_gap_recovered": {
+      "estimate": 0.2905956361150249,
+      "ci95": [
+        0.09712722988705634,
+        0.46318659685982505
+      ]
+    }
+  }
+}

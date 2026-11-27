@@ -1,0 +1,49 @@
+{
+  "scope": "one CPU thread; complete sequence-to-score with frozen ESM35; no teacher in runtime; synthetic repeated-alphabet inputs",
+  "torch": "2.5.1",
+  "numpy": "2.0.2",
+  "platform": "macOS-15.4-arm64-arm-64bit",
+  "full_parameters": 33762666,
+  "encoder_fp32_bytes": 135070544,
+  "head_npz_bytes": 22014,
+  "full_weight_artifact_bytes": 135092558,
+  "prediction_array_parity_head": {
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0
+  },
+  "fresh_raw_sequence_probe_probability_errors": [
+    1.9166568832051922e-07,
+    1.1706883906725807e-07,
+    4.272632973534307e-07,
+    1.2156134188145984e-07
+  ],
+  "fresh_probe_count": 4,
+  "warmups": 3,
+  "repeats": 10,
+  "batch": 1,
+  "timings": {
+    "100": {
+      "sequence_to_score_median_ms": 27.037937,
+      "sequence_to_score_p95_ms": 31.1892372,
+      "cached_head_only_median_ms": 0.006
+    },
+    "300": {
+      "sequence_to_score_median_ms": 128.2596875,
+      "sequence_to_score_p95_ms": 153.17580625,
+      "cached_head_only_median_ms": 0.0060625
+    },
+    "500": {
+      "sequence_to_score_median_ms": 242.9663335,
+      "sequence_to_score_p95_ms": 252.50668994999998,
+      "cached_head_only_median_ms": 0.006041
+    },
+    "1022": {
+      "sequence_to_score_median_ms": 798.8487494999999,
+      "sequence_to_score_p95_ms": 819.00731715,
+      "cached_head_only_median_ms": 0.006458
+    }
+  }
+}

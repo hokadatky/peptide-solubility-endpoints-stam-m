@@ -1,0 +1,42 @@
+{
+  "source_sha256": "86acaa99c769f8666c113515f4332984b8afdf8a51048c4fb54ab22ef8313a3a",
+  "portable_sha256": "db507b1018308798ebbb65444116c01b3131d537aaeb068d8a253deda69e8021",
+  "source_npz_bytes": 23923,
+  "coefficient_count": 2925,
+  "array_bytes": 23400,
+  "parity_all_outer_rows": {
+    "2": 1.1256094112344073e-07,
+    "3": 3.7981827405442203e-08,
+    "4": 8.037268398042308e-08,
+    "5": 8.670970530477717e-08,
+    "6": 7.528601275730296e-08
+  },
+  "batch": 1,
+  "warmups": 20,
+  "repeats": 100,
+  "platform": "macOS-15.4-arm64-arm-64bit",
+  "numpy": "1.26.4",
+  "timings": {
+    "100": {
+      "median_ms": 0.300666,
+      "p95_ms": 0.37790209999999996
+    },
+    "300": {
+      "median_ms": 0.41093749999999996,
+      "p95_ms": 0.48966459999999995
+    },
+    "500": {
+      "median_ms": 0.504312,
+      "p95_ms": 0.5947431
+    },
+    "1000": {
+      "median_ms": 0.8093954999999999,
+      "p95_ms": 0.9494038499999999
+    },
+    "2825": {
+      "median_ms": 1.6898955,
+      "p95_ms": 1.8642455
+    }
+  },
+  "scope": "one BLAS thread; complete sequence-to-score; synthetic benchmark; no teacher timing"
+}

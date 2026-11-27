@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-16T10:26:45.138713+00:00",
+  "development_roles": {
+    "calibration": {
+      "groups": 1531,
+      "positive": 807,
+      "rows": 1617
+    },
+    "fit": {
+      "groups": 7653,
+      "positive": 4107,
+      "rows": 8198
+    },
+    "model_selection": {
+      "groups": 1531,
+      "positive": 804,
+      "rows": 1621
+    }
+  },
+  "environment": {
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.2.0",
+      "scipy": "1.15.3"
+    },
+    "platform": "macOS-15.4-arm64-arm-64bit",
+    "python": "3.10.17 | packaged by conda-forge | (main, Apr 10 2025, 22:23:34) [Clang 18.1.8 ]"
+  },
+  "exact_sequence_overlap": 0,
+  "external_groups": 2723,
+  "external_labels_parsed": false,
+  "external_rows": 3100,
+  "feature_hashes": {
+    "development_b1": "3ada8dfa2790a15b5c63e7fc5ce5e0744b0a1a7dcba9768ac038e289bc2f06fc",
+    "development_embedding": "05fbef5cec46313a3067836ea5bfc56b4b0a81505787af278bf671eb8fd16d1b",
+    "external_b1": "a2c2ca3ab6a1fb9098d34c059a0c60a3c3bdd674e1391a14c667815b6ae11dde",
+    "external_embedding": "e6fb6c9bd5d4b56145e4e9afaa0d28593e06a3f6a732545815d339d3be23ee62",
+    "external_record_order": "603140366018ea727d2d0e1d408c97c82e7a18486ee6ec63881030658a3a1ac3"
+  },
+  "historical_internal_manifest": {
+    "path": "${WORKSPACE}/paper/general_peptide_solubility_scoping/analysis_addon_run_20260810_v4/manifests/internal-primary.json",
+    "sha256": "1a87741fdc7d49077d67c58327256ed169f611fb9a419491f229f1581c676b82"
+  },
+  "inputs": {
+    "development_features": {
+      "path": "${WORKSPACE}/data/solubility/solubility_transparent_features_development.csv",
+      "sha256": "74ee352dfeff9be1b2500261ab6d60fb2aed8870fb280b5b300e8f4ebd4712b9"
+    },
+    "embedding_index": {
+      "path": "${WORKSPACE}/data/solubility/embeddings/soluprot_embedding_index.csv",
+      "sha256": "0988ba5f71b8da7c9af65d5d05baa0616538a9629ac88c80e9f036430c22bf94"
+    },
+    "external_clustered": {
+      "path": "${WORKSPACE}/data/solubility/soluprot_external_test_clustered.csv",
+      "sha256": "6053e4d90e26ab2a13dd7e6f4c99da66e269a4a2711e5645ee13b70594e3b469"
+    },
+    "external_features": {
+      "path": "${WORKSPACE}/data/solubility/solubility_transparent_features_external.csv",
+      "sha256": "a906652cd246931dfbf1c75e4b30cf8fc59586ebee7fe77adae3bf114e0c698c"
+    },
+    "feature_manifest": {
+      "path": "${WORKSPACE}/data/solubility/solubility_transparent_features.json",
+      "sha256": "be7638fbc9bdf421661710ef8319a2be58473f4de4bfe351edbd9adda3279f50"
+    },
+    "prott5_array": {
+      "path": "${WORKSPACE}/data/solubility/embeddings/soluprot_prott5.npy",
+      "sha256": "be0a480acaf19f2deada752e5befb7d568f90b73f089a2ec6b74aa75ce7cdf45"
+    },
+    "train_partitions": {
+      "path": "${WORKSPACE}/data/solubility/soluprot_train_partitions.csv",
+      "sha256": "28a63f9d40c47bda0ff936830eacbf818572b78f67f23417ad01e3bee528ad0e"
+    }
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,214 @@
+{
+  "absolute_auc": {
+    "B0": 0.7042738938822328,
+    "B1": 0.7152124859659689,
+    "B1_plus_ProtT5": 0.7872144211544063
+  },
+  "analysis_date": "2026-08-16",
+  "analysis_scope": "descriptive derivation from released privacy-safe aggregates",
+  "claim_ceiling": "Within-development recombinant soluble-expression discrimination in E. coli; not direct aqueous solubility, external validation, calibrated deployment utility, or state-of-the-art ranking.",
+  "compute_context": {
+    "ProtT5_embedding_wall_hours": 2.567181944444444,
+    "ProtT5_peak_rss_GiB": 7.346923828125,
+    "hardware": "CPU",
+    "model": "Rostlab/prot_t5_xl_half_uniref50-enc"
+  },
+  "distillation_boundary": {
+    "ci95": [
+      -0.007951,
+      0.0278
+    ],
+    "point_gain_distilled_minus_hard": 0.010095,
+    "promoted": false,
+    "status": "scientific_null_engineering_pass_not_promoted"
+  },
+  "endpoint": "recombinant soluble-expression status in Escherichia coli; not direct aqueous solubility",
+  "fold_sensitivity": {
+    "gain_max": 0.08391756391756389,
+    "gain_mean_descriptive": 0.07201994669389,
+    "gain_min": 0.05680029207740056,
+    "gain_sample_sd_descriptive": 0.00944428368577,
+    "interpretation": "evaluation partitions, not independent biological replicates",
+    "n_partitions": 7,
+    "n_positive": 7,
+    "rows": [
+      {
+        "candidate_auc": 0.772540297289562,
+        "fold": 0,
+        "gain": 0.06606350134273553,
+        "reference_auc": 0.7064767959468264
+      },
+      {
+        "candidate_auc": 0.7901693515076414,
+        "fold": 1,
+        "gain": 0.08320712286015886,
+        "reference_auc": 0.7069622286474826
+      },
+      {
+        "candidate_auc": 0.7804197290894734,
+        "fold": 2,
+        "gain": 0.07145113284334592,
+        "reference_auc": 0.7089685962461275
+      },
+      {
+        "candidate_auc": 0.7728002920774005,
+        "fold": 3,
+        "gain": 0.05680029207740056,
+        "reference_auc": 0.716
+      },
+      {
+        "candidate_auc": 0.7911705143782908,
+        "fold": 4,
+        "gain": 0.07159743785908224,
+        "reference_auc": 0.7195730765192085
+      },
+      {
+        "candidate_auc": 0.799634292352739,
+        "fold": 5,
+        "gain": 0.07110257595694491,
+        "reference_auc": 0.7285317163957941
+      },
+      {
+        "candidate_auc": 0.8046057646057646,
+        "fold": 6,
+        "gain": 0.08391756391756389,
+        "reference_auc": 0.7206882006882007
+      }
+    ]
+  },
+  "negative_control": {
+    "interpretation": "gross leakage/alignment gate; not a p-value",
+    "n_replicates_existing": 50,
+    "status": "PASSED"
+  },
+  "primary_contrast": {
+    "ci95": [
+      0.06497865020719498,
+      0.07912424631381525
+    ],
+    "interpretation": "Conditional group-bootstrap interval for fixed OOF predictions; not algorithm-level uncertainty including refitting.",
+    "metric": "roc_auc",
+    "n_replicates_valid_existing": 10000,
+    "point_gain": 0.07200193518843745,
+    "practical_margin": 0.02
+  },
+  "privacy": {
+    "contains_record_ids": false,
+    "contains_row_level_data": false,
+    "contains_sequences": false
+  },
+  "schema": "stam_s6_released_aggregate_diagnostic_analysis_v1",
+  "scientific_computation_counts": {
+    "bootstrap_replicates_added": 0,
+    "embedding_extractions": 0,
+    "external_evaluations": 0,
+    "model_fits": 0,
+    "permutations_added": 0
+  },
+  "secondary_diagnostics": [
+    {
+      "candidate": 0.8013552163792494,
+      "candidate_minus_reference": 0.05898893708758868,
+      "interpretation": "descriptive improvement",
+      "label": "PR-AUC",
+      "metric": "pr_auc",
+      "preferred_direction": "higher",
+      "reference": 0.7423662792916608
+    },
+    {
+      "candidate": 0.1904001256817954,
+      "candidate_minus_reference": -0.022631563091431717,
+      "interpretation": "descriptive improvement",
+      "label": "Brier score",
+      "metric": "brier",
+      "preferred_direction": "lower",
+      "reference": 0.21303168877322712
+    },
+    {
+      "candidate": 0.5635515651002654,
+      "candidate_minus_reference": -0.048043929253173134,
+      "interpretation": "descriptive improvement",
+      "label": "Log loss",
+      "metric": "log_loss",
+      "preferred_direction": "lower",
+      "reference": 0.6115954943534385
+    },
+    {
+      "candidate": 0.69547895458183,
+      "candidate_minus_reference": -0.017180643131297746,
+      "interpretation": "did not improve; candidate is farther from 1",
+      "label": "Calibration slope",
+      "metric": "calibration_slope",
+      "preferred_direction": "closer_to_1",
+      "reference": 0.7126595977131277
+    },
+    {
+      "candidate": -0.025574958788744374,
+      "candidate_minus_reference": 0.002747044654480644,
+      "interpretation": "descriptively closer to 0; no external calibration evidence",
+      "label": "Calibration intercept",
+      "metric": "calibration_intercept",
+      "preferred_direction": "closer_to_0",
+      "reference": -0.028322003443225018
+    }
+  ],
+  "source_files": {
+    "auc": {
+      "basename": "aggregate_internal_auc_s1.json",
+      "relative_path_from_package": "analysis_addon/results/aggregate_internal_auc_s1.json",
+      "sha256": "ac69b08ce85e2cb8d02ef7633a6e98e59dd1976377384269d5fa78c78c982ee6"
+    },
+    "diagnostics": {
+      "basename": "aggregate_internal_diagnostics_s1.json",
+      "relative_path_from_package": "analysis_addon/results/aggregate_internal_diagnostics_s1.json",
+      "sha256": "6c6f79db0b7f1500926a6a4e4f19cf9fd9173f92215a47e64abd5219596f6378"
+    },
+    "distillation": {
+      "basename": "distillation_feasibility_s2.json",
+      "relative_path_from_package": "analysis_addon/results/distillation_feasibility_s2.json",
+      "sha256": "1b9816bbf34b029c693bdad5845574ff19783f07ed89dec32ab4654c92be7549"
+    }
+  },
+  "split_assignment_sensitivity": {
+    "gain_max": 0.07212360321859346,
+    "gain_mean_descriptive": 0.071573374997752,
+    "gain_min": 0.07109278933715824,
+    "gain_sample_sd_descriptive": 0.000390687154827,
+    "interpretation": "frozen split sensitivity, not independent replication",
+    "n_assignments": 5,
+    "n_positive": 5,
+    "rows": [
+      {
+        "candidate_auc": 0.7857167543789787,
+        "gain": 0.07154321796463647,
+        "reference_auc": 0.7141735364143422,
+        "seed": 20260809
+      },
+      {
+        "candidate_auc": 0.7892219436519813,
+        "gain": 0.0717474661057581,
+        "reference_auc": 0.7174744775462232,
+        "seed": 20260810
+      },
+      {
+        "candidate_auc": 0.7875014329178514,
+        "gain": 0.07212360321859346,
+        "reference_auc": 0.7153778296992579,
+        "seed": 20260811
+      },
+      {
+        "candidate_auc": 0.7874498968115635,
+        "gain": 0.07135979836261375,
+        "reference_auc": 0.7160900984489498,
+        "seed": 20260812
+      },
+      {
+        "candidate_auc": 0.7865590409256019,
+        "gain": 0.07109278933715824,
+        "reference_auc": 0.7154662515884437,
+        "seed": 20260813
+      }
+    ]
+  },
+  "status": "completed_no_refit_no_resampling"
+}

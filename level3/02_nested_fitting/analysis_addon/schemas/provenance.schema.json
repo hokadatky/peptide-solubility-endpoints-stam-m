@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["status", "run_id", "config_sha256", "input_hashes", "release_policy"],
+  "properties": {
+    "status": {"const": "completed"},
+    "run_id": {"type": "string"},
+    "config_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "input_hashes": {"type": "object"},
+    "release_policy": {"type": "object"}
+  },
+  "additionalProperties": true
+}

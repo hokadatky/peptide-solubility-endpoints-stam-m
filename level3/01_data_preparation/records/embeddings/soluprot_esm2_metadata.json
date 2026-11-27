@@ -1,0 +1,60 @@
+{
+  "batches_completed_current_run": 679,
+  "chunk_context_limitation": "Sequences longer than the chunk limit are encoded as non-overlapping blocks; context does not cross block boundaries.",
+  "configuration": {
+    "batch_schedule_hash": "2dafaa28c9a025d8e7255f4451f6fcae1358a85df8279930bddc594fd973acdd",
+    "checkpoint": "facebook/esm2_t33_650M_UR50D",
+    "chunk_residues": 900,
+    "dtype": "float16",
+    "max_batch_size": 32,
+    "max_batch_tokens": 3600,
+    "model_key": "esm2",
+    "n_records": 14536,
+    "record_id_hash": "6b4d1a7e1464aa89acc8d31ad5f68388d65843aaaadb71db36411caefb5d5e65",
+    "revision": "08e4846e537177426273712802403f7ba8261b6c"
+  },
+  "configuration_hash": "9ae95fe369730d7d020ed30d5f5b1f70937650988b9a4f8c476cd07064da5a5a",
+  "device": "cpu",
+  "dimension": 1280,
+  "effective_torch_dtype": "float32",
+  "input_sha256": {
+    "development": "28a63f9d40c47bda0ff936830eacbf818572b78f67f23417ad01e3bee528ad0e",
+    "external_test": "6053e4d90e26ab2a13dd7e6f4c99da66e269a4a2711e5645ee13b70594e3b469",
+    "index": "0988ba5f71b8da7c9af65d5d05baa0616538a9629ac88c80e9f036430c22bf94"
+  },
+  "n_batches": 1456,
+  "n_chunks": 14941,
+  "n_records": 14536,
+  "output_bytes": 74424448,
+  "output_sha256": "8b4b477c443e28a58b6048babbd8d397192be4afcfa7454409716b6cfb955afc",
+  "parameter_count": 652353941,
+  "peak_memory_current_run": {
+    "accelerator_current_bytes": null,
+    "accelerator_driver_or_reserved_bytes": null,
+    "process_rss_bytes": 5453742080
+  },
+  "pooling": "residue-only arithmetic mean across every biological residue",
+  "sequences_longer_than_chunk": 379,
+  "software": {
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "platform": "macOS-15.4-arm64-arm-64bit",
+    "psutil": "5.9.0",
+    "python": "3.9.18",
+    "sentencepiece": "0.1.99",
+    "tokenizers": "0.19.1",
+    "torch": "2.5.1",
+    "transformers": "4.41.2"
+  },
+  "special_tokens_excluded": true,
+  "throughput_current_run": {
+    "all_residues_per_second_if_uninterrupted": null,
+    "all_sequences_per_second_if_uninterrupted": null
+  },
+  "timing_current_run_seconds": {
+    "embedding": 2673.735097625,
+    "model_load": 0.862351375,
+    "warmup": 4.5298820410000005
+  },
+  "total_residues": 4933115
+}

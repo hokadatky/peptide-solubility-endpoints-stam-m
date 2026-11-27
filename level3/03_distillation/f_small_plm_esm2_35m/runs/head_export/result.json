@@ -1,0 +1,13 @@
+{
+  "all_oof_head_parity": {
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0
+  },
+  "head_coefficients": 906,
+  "normalization_constants": 1810,
+  "fold6_npz_bytes": 22014,
+  "sha256": "d4e092e0713fc99da456b3f15b738d5389834ab294a840a7d226c5c8a087e490"
+}
